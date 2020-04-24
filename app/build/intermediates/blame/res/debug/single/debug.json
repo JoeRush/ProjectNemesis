@@ -1,118 +1,66 @@
 [
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\MyFirstApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\MyFirstApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\MyFirstApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_display_message.xml.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\MyFirstApp\\app\\src\\main\\res\\layout\\activity_display_message.xml"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\MyFirstApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\MyFirstApp\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\MyFirstApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\MyFirstApp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_more_grey_24dp.xml.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\src\\main\\res\\drawable\\ic_more_grey_24dp.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\MyFirstApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\MyFirstApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\MyFirstApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\MyFirstApp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\MyFirstApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\MyFirstApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\build\\intermediates\\res\\merged\\debug\\menu_bottom_nav_menu.xml.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\src\\main\\res\\menu\\bottom_nav_menu.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\MyFirstApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\MyFirstApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_blog_post.xml.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\src\\main\\res\\layout\\fragment_blog_post.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\MyFirstApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\MyFirstApp\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\MyFirstApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\MyFirstApp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\MyFirstApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\MyFirstApp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\MyFirstApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\MyFirstApp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\MyFirstApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\MyFirstApp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_login.xml.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\src\\main\\res\\layout\\fragment_login.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\MyFirstApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\MyFirstApp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\MyFirstApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\MyFirstApp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_blog_black_24dp.xml.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\src\\main\\res\\drawable\\ic_blog_black_24dp.xml"
-    },
-    {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_register.xml.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\src\\main\\res\\layout\\fragment_register.xml"
-    },
-    {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_home_black_24dp.xml.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\src\\main\\res\\drawable\\ic_home_black_24dp.xml"
-    },
-    {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_blog_card.xml.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\src\\main\\res\\layout\\fragment_blog_card.xml"
-    },
-    {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_auth.xml.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\src\\main\\res\\layout\\activity_auth.xml"
-    },
-    {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\build\\intermediates\\res\\merged\\debug\\navigation_m_graph.xml.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\src\\main\\res\\navigation\\m_graph.xml"
-    },
-    {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
-    },
-    {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_success.xml.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\src\\main\\res\\layout\\fragment_success.xml"
-    },
-    {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\build\\intermediates\\res\\merged\\debug\\navigation_auth_graph.xml.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\src\\main\\res\\navigation\\auth_graph.xml"
-    },
-    {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_less_grey_24dp.xml.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\src\\main\\res\\drawable\\ic_less_grey_24dp.xml"
-    },
-    {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_blog_list.xml.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\src\\main\\res\\layout\\fragment_blog_list.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\MyFirstApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\MyFirstApp\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     }
 ]

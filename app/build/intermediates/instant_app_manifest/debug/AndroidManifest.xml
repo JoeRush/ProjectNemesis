@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="edu.uw.tcss450.phishapp"
+    package="com.example.myfirstapp"
     android:targetSandboxVersion="2"
     android:versionCode="1"
     android:versionName="1.0" >
@@ -20,8 +20,14 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="edu.uw.tcss450.phishapp.ui.MainActivity" />
-        <activity android:name="edu.uw.tcss450.phishapp.ui.AuthenticationActivity" >
+        <activity
+            android:name="com.example.myfirstapp.DisplayMessageActivity"
+            android:parentActivityName="com.example.myfirstapp.MainActivity" >
+            <meta-data
+                android:name="android.support.Parent_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name="com.example.myfirstapp.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

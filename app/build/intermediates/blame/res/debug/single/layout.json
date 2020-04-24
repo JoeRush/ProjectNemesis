@@ -1,34 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_success.xml",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\src\\main\\res\\layout\\fragment_success.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\MyFirstApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\MyFirstApp\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_blog_post.xml",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\src\\main\\res\\layout\\fragment_blog_post.xml"
-    },
-    {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\src\\main\\res\\layout\\activity_main.xml"
-    },
-    {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_login.xml",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\src\\main\\res\\layout\\fragment_login.xml"
-    },
-    {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_blog_card.xml",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\src\\main\\res\\layout\\fragment_blog_card.xml"
-    },
-    {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_register.xml",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\src\\main\\res\\layout\\fragment_register.xml"
-    },
-    {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_blog_list.xml",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\src\\main\\res\\layout\\fragment_blog_list.xml"
-    },
-    {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_auth.xml",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\src\\main\\res\\layout\\activity_auth.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\MyFirstApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_display_message.xml",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\MyFirstApp\\app\\src\\main\\res\\layout\\activity_display_message.xml"
     }
 ]

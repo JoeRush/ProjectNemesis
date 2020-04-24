@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\jr-99\\AndroidStudioProjects\\PhishApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
+            "outputFile": "C:\\Users\\jr-99\\AndroidStudioProjects\\MyFirstApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\jr-99\\.gradle\\caches\\transforms-2\\files-2.1\\b5ccc5f67e3250218a3047c00176e6ff\\appcompat-1.1.0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\jr-99\\.gradle\\caches\\transforms-2\\files-2.1\\9442e2deaa13c1c57ceecb67bd85baf8\\appcompat-1.0.2\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\jr-99\\.gradle\\caches\\transforms-2\\files-2.1\\9f53cb53909029cecd1698edf8387a48\\core-1.1.0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\jr-99\\.gradle\\caches\\transforms-2\\files-2.1\\aa782ce88e4a65071c9b22f6f1fd262a\\core-1.0.1\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
