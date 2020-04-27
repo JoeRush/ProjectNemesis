@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/container"
     android:layout_width="match_parent"
+<<<<<<< Updated upstream
     android:layout_height="match_parent">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -31,3 +32,9 @@
         app:navGraph="@navigation/m_graph" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+=======
+    android:layout_height="match_parent"
+    tools:context="com.example.TCSS450GROUP1.ui.MainActivity">
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+>>>>>>> Stashed changes

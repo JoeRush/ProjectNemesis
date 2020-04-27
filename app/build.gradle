@@ -8,7 +8,11 @@ android {
         enabled = true;
     }
     defaultConfig {
+<<<<<<< Updated upstream
         applicationId "edu.uw.tcss450.phishapp"
+=======
+        applicationId "com.example.TCSS450GROUP1"
+>>>>>>> Stashed changes
         minSdkVersion 24
         targetSdkVersion 29
         versionCode 1
@@ -26,6 +30,12 @@ android {
     compileOptions {
         sourceCompatibility = 1.8
         targetCompatibility = 1.8
+<<<<<<< Updated upstream
+=======
+    }
+    viewBinding {
+        enabled = true;
+>>>>>>> Stashed changes
     }
 
 }
@@ -39,6 +49,11 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+<<<<<<< Updated upstream
     implementation 'androidx.navigation:navigation-fragment:2.2.1'
     implementation 'androidx.navigation:navigation-ui:2.2.1'
+=======
+    implementation 'androidx.navigation:navigation-fragment:2.2.2'
+    implementation 'androidx.navigation:navigation-ui:2.2.2'
+>>>>>>> Stashed changes
 }
