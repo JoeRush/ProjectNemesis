@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "name": "auth_graph",
+    "navigationXmlIds": [],
+    "deepLinks": []
+  },
+  {
+    "name": "main_graph",
+    "navigationXmlIds": [],
+    "deepLinks": []
+  }
+]

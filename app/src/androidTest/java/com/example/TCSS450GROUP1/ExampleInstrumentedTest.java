@@ -1,4 +1,4 @@
-package com.example.myfirstapp;
+package com.example.TCSS450GROUP1;
 
 import android.content.Context;
 
