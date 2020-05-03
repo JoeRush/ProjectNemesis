@@ -1,2 +1,2 @@
-rootProject.name='PhishApp'
+rootProject.name='My First App'
 include ':app'

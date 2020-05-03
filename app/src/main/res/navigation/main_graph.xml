@@ -3,26 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_graph"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/navigation_home">
 
     <fragment
-        android:id="@+id/homeFragment"
+        android:id="@+id/navigation_home"
         android:name="com.example.TCSS450GROUP1.ui.home.HomeFragment"
-        android:label="fragment_home"
+        android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
     <fragment
-        android:id="@+id/chatFragment"
+        android:id="@+id/navigation_chat"
         android:name="com.example.TCSS450GROUP1.ui.chat.ChatFragment"
-        android:label="fragment_chat"
+        android:label="@string/title_chat"
         tools:layout="@layout/fragment_chat" />
     <fragment
-        android:id="@+id/connectionFragment"
-        android:name="com.example.TCSS450GROUP1.ui.connections.ConnectionFragment"
-        android:label="fragment_connection"
-        tools:layout="@layout/fragment_connection" />
-    <fragment
-        android:id="@+id/weatherFragment"
+        android:id="@+id/navigation_weather"
         android:name="com.example.TCSS450GROUP1.ui.weather.WeatherFragment"
-        android:label="fragment_weather"
+        android:label="@string/title_weather"
         tools:layout="@layout/fragment_weather" />
+    <fragment
+        android:id="@+id/navigation_connections"
+        android:name="com.example.TCSS450GROUP1.ui.connections.ConnectionFragment"
+        android:label="@string/title_connections"
+        tools:layout="@layout/fragment_connection" />
 </navigation>

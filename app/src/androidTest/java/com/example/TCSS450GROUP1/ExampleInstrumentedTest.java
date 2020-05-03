@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream:app/src/androidTest/java/edu/uw/tcss450/phishapp/ExampleInstrumentedTest.java
-package edu.uw.tcss450.phishapp;
-=======
 package com.example.TCSS450GROUP1;
->>>>>>> Stashed changes:app/src/androidTest/java/com/example/TCSS450GROUP1/ExampleInstrumentedTest.java
 
 import android.content.Context;
 
@@ -26,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("edu.uw.tcss450.phishapp", appContext.getPackageName());
+        assertEquals("com.example.myfirstapp", appContext.getPackageName());
     }
 }

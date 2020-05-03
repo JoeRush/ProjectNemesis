@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream:app/src/test/java/edu/uw/tcss450/phishapp/ExampleUnitTest.java
-package edu.uw.tcss450.phishapp;
-=======
 package com.example.TCSS450GROUP1;
->>>>>>> Stashed changes:app/src/test/java/com/example/TCSS450GROUP1/ExampleUnitTest.java
 
 import org.junit.Test;
 
