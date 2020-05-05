@@ -2,15 +2,11 @@ package com.example.TCSS450GROUP1.ui.auth.login;
 
 import android.os.Bundle;
 
-<<<<<<< HEAD
-import androidx.fragment.app.Fragment;
-=======
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
->>>>>>> Joseph's-Branch
 
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -18,17 +14,11 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.TCSS450GROUP1.R;
-<<<<<<< HEAD
-=======
 import com.example.TCSS450GROUP1.databinding.FragmentLoginBinding;
-<<<<<<< HEAD
->>>>>>> Joseph's-Branch
-=======
 import com.example.TCSS450GROUP1.util.PasswordValidator;
 
 import org.json.JSONException;
 import org.json.JSONObject;
->>>>>>> Joseph's-Branch
 
 /**
  * A simple {@link Fragment} subclass.
@@ -55,14 +45,7 @@ public class LoginFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-<<<<<<< HEAD
-        return inflater.inflate(R.layout.fragment_login, container, false);
-    }
-<<<<<<< HEAD
-=======
-=======
         binding = FragmentLoginBinding.inflate(inflater, container, false);
->>>>>>> Joseph's-Branch
 
         return binding.getRoot();
     }
@@ -129,7 +112,7 @@ public class LoginFragment extends Fragment {
                 }
             } else {
                 try {
-                    navigateToSuccess(
+                    navigateToHome(
                             binding.editEmail.getText().toString(),
                             response.getString("token")
                     );
@@ -143,7 +126,7 @@ public class LoginFragment extends Fragment {
 
     }
 
-    private void navigateToSuccess(String toString, String token) {
+    private void navigateToHome(String toString, String token) {
         Navigation.findNavController(getView()).navigate(
 
                 LoginFragmentDirections.actionLoginFragmentToMainActivity(toString, token));
@@ -152,5 +135,4 @@ public class LoginFragment extends Fragment {
 
 
 
->>>>>>> Joseph's-Branch
 }
