@@ -123,14 +123,9 @@ public class RegisterFragment extends Fragment {
                 }
             } else {
 
-                String credential = binding.editEmail.getText().toString() + ":" +
-                        binding.editPassword1.getText().toString();
-                String auth = "Basic "
-                        + Base64.encodeToString(credential.getBytes(),
-                        +Base64.NO_WRAP);
 
                 navigateToVerify(binding.editEmail.getText().toString(),
-                        auth);
+                        "");
 
             }
         } else {
@@ -141,7 +136,8 @@ public class RegisterFragment extends Fragment {
         binding.buttonRegister.setOnClickListener(button ->
                 Navigation.findNavController(getView()).navigate(
                         RegisterFragmentDirections
-                                .actionRegisterFragmentToVerifyFragment("","")));
+                                .actionRegisterFragmentToVerifyFragment(binding.editEmail.getText().toString(),
+                                        binding.editPassword1.getText().toString())));
     }
 
 
