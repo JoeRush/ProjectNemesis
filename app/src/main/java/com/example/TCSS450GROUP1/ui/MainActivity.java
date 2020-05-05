@@ -1,14 +1,6 @@
 package com.example.TCSS450GROUP1.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
-<<<<<<< HEAD
-
-import android.os.Bundle;
-
-import com.example.TCSS450GROUP1.R;
-
-public class MainActivity extends AppCompatActivity {
-=======
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -25,14 +17,11 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
     private AppBarConfiguration mAppBarConfiguration;
->>>>>>> Joseph's-Branch
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-<<<<<<< HEAD
-=======
 
         MainActivityArgs args = MainActivityArgs.fromBundle(getIntent().getExtras());
         String email = args.getEmail();
@@ -70,6 +59,5 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
->>>>>>> Joseph's-Branch
     }
 }

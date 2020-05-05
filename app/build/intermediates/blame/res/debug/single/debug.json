@@ -1,106 +1,130 @@
 [
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\build\\intermediates\\res\\merged\\debug\\navigation_main_graph.xml.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\src\\main\\res\\navigation\\main_graph.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_display_message.xml.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\layout\\activity_display_message.xml"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_verify.xml.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\layout\\fragment_verify.xml"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_verify.xml.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\src\\main\\res\\layout\\fragment_verify.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\res\\merged\\debug\\navigation_main_graph.xml.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\navigation\\main_graph.xml"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_display_message.xml.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\src\\main\\res\\layout\\activity_display_message.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_chat.xml.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\src\\main\\res\\layout\\fragment_chat.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_chat_black_24dp.xml.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\drawable\\ic_chat_black_24dp.xml"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_home.xml.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\src\\main\\res\\layout\\fragment_home.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\res\\merged\\debug\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\menu\\bottom_nav_menu.xml"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_login.xml.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\src\\main\\res\\layout\\fragment_login.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_contacts_black_24dp.xml.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\drawable\\ic_contacts_black_24dp.xml"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_authentication.xml.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\layout\\activity_authentication.xml"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_weather.xml.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\layout\\fragment_weather.xml"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_authentication.xml.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\src\\main\\res\\layout\\activity_authentication.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_login.xml.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\layout\\fragment_login.xml"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_connection.xml.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\src\\main\\res\\layout\\fragment_connection.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_cloud_black_24dp.xml.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\drawable\\ic_cloud_black_24dp.xml"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_weather.xml.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\src\\main\\res\\layout\\fragment_weather.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_chat.xml.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\layout\\fragment_chat.xml"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_home_black_24dp.xml.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\drawable\\ic_home_black_24dp.xml"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_register.xml.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\src\\main\\res\\layout\\fragment_register.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_register.xml.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\layout\\fragment_register.xml"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\build\\intermediates\\res\\merged\\debug\\navigation_auth_graph.xml.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\src\\main\\res\\navigation\\auth_graph.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_connection.xml.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\layout\\fragment_connection.xml"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450te\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\res\\merged\\debug\\navigation_auth_graph.xml.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\navigation\\auth_graph.xml"
+    },
+    {
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\res\\merged\\debug\\menu_toolbar.xml.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\menu\\toolbar.xml"
+    },
+    {
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     }
 ]

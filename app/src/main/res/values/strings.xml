@@ -1,12 +1,4 @@
 <resources>
-<<<<<<< HEAD
-    <string name="app_name">TCSS450GROUP1</string>
-    <string name="edit_message">Enter a message</string>
-    <string name="button_send">Send</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-=======
     <string name="app_name">Team 1</string>
 
     <!-- TODO: Remove or change this placeholder text -->
@@ -42,5 +34,4 @@
     <string name="action_sign_in_short">Sign in</string>
     <string name="action_register_short">Register</string>
 
->>>>>>> Joseph's-Branch
 </resources>

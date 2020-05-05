@@ -2,10 +2,6 @@ package com.example.TCSS450GROUP1.ui.auth.register;
 
 import android.os.Bundle;
 
-<<<<<<< HEAD
-import androidx.fragment.app.Fragment;
-
-=======
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -14,15 +10,12 @@ import androidx.navigation.Navigation;
 
 import android.util.Base64;
 import android.util.Log;
->>>>>>> Joseph's-Branch
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 
 import com.example.TCSS450GROUP1.R;
-<<<<<<< HEAD
-=======
 import com.example.TCSS450GROUP1.databinding.FragmentLoginBinding;
 import com.example.TCSS450GROUP1.databinding.FragmentRegisterBinding;
 import com.example.TCSS450GROUP1.ui.auth.login.LoginFragmentDirections;
@@ -30,15 +23,11 @@ import com.example.TCSS450GROUP1.util.PasswordValidator;
 
 import org.json.JSONException;
 import org.json.JSONObject;
->>>>>>> Joseph's-Branch
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class RegisterFragment extends Fragment {
-<<<<<<< HEAD
-
-=======
     private FragmentRegisterBinding binding;
     private RegisterViewModel mRegisterModel;
     private PasswordValidator mEmailValidator = PasswordValidator.checkPwdLength(2)
@@ -53,7 +42,6 @@ public class RegisterFragment extends Fragment {
             PasswordValidator.checkClientPredicate(pwd -> pwd.equals(binding.editPassword2.getText().toString()));
     private PasswordValidator mUsernameValidator =
             PasswordValidator.checkPwdLength(3);
->>>>>>> Joseph's-Branch
     public RegisterFragment() {
         // Required empty public constructor
     }
@@ -62,11 +50,6 @@ public class RegisterFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-<<<<<<< HEAD
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_register, container, false);
-    }
-=======
         binding = FragmentRegisterBinding.inflate(inflater, container, false);
         return binding.getRoot();
     }
@@ -159,5 +142,4 @@ public class RegisterFragment extends Fragment {
 
 
 
->>>>>>> Joseph's-Branch
 }

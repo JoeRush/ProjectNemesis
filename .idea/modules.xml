@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/My First App.iml" filepath="$PROJECT_DIR$/My First App.iml" group="My First App" />
-      <module fileurl="file://$PROJECT_DIR$/Team-1-TCSS450.iml" filepath="$PROJECT_DIR$/Team-1-TCSS450.iml" group="My First App" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="My First App/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/NickBranch.iml" filepath="$PROJECT_DIR$/.idea/NickBranch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TEAMONE.iml" filepath="$PROJECT_DIR$/TEAMONE.iml" group="TEAMONE" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="TEAMONE/app" />
     </modules>
   </component>
 </project>

@@ -3,29 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_graph"
-<<<<<<< HEAD
-    app:startDestination="@id/homeFragment">
-
-    <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.example.TCSS450GROUP1.ui.home.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
-    <fragment
-        android:id="@+id/chatFragment"
-        android:name="com.example.TCSS450GROUP1.ui.chat.ChatFragment"
-        android:label="fragment_chat"
-        tools:layout="@layout/fragment_chat" />
-    <fragment
-        android:id="@+id/weatherFragment"
-        android:name="com.example.TCSS450GROUP1.ui.weather.WeatherFragment"
-        android:label="fragment_weather"
-        tools:layout="@layout/fragment_weather" />
-    <fragment
-        android:id="@+id/connectionFragment"
-        android:name="com.example.TCSS450GROUP1.ui.connections.ConnectionFragment"
-        android:label="fragment_connection"
-=======
     app:startDestination="@id/navigation_home">
 
     <fragment
@@ -47,6 +24,5 @@
         android:id="@+id/navigation_connections"
         android:name="com.example.TCSS450GROUP1.ui.connections.ConnectionFragment"
         android:label="@string/title_connections"
->>>>>>> Joseph's-Branch
         tools:layout="@layout/fragment_connection" />
 </navigation>
