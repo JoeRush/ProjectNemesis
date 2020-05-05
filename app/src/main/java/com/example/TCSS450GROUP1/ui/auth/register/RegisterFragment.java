@@ -18,7 +18,7 @@ import android.view.ViewGroup;
 import com.example.TCSS450GROUP1.R;
 import com.example.TCSS450GROUP1.databinding.FragmentLoginBinding;
 import com.example.TCSS450GROUP1.databinding.FragmentRegisterBinding;
-import com.example.TCSS450GROUP1.ui.auth.login.LoginFragmentDirections;
+import com.example.TCSS450GROUP1.ui.auth.register.RegisterFragmentDirections;
 import com.example.TCSS450GROUP1.util.PasswordValidator;
 
 import org.json.JSONException;
@@ -50,7 +50,7 @@ public class RegisterFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        binding = FragmentRegisterBinding.inflate(inflater, container, false);
+        binding = FragmentRegisterBinding.inflate(inflater);
         return binding.getRoot();
     }
     @Override
@@ -68,19 +68,36 @@ public class RegisterFragment extends Fragment {
         mRegisterModel.addResponseObserver(getViewLifecycleOwner(),
                 this::observeResponse);
     }
+
+    /**
+     * Private helper method to attempt to register when button is clicked.
+     * @param button the button being clicked.
+     */
     private void attemptRegister(final View button) { validateEmail(); }
+
+    /**
+     * Private helper method to check if email is a valid email based on restrictions.
+     */
     private void validateEmail() {
         mEmailValidator.processResult(
                 mEmailValidator.apply(binding.editEmail.getText().toString().trim()),
                 this::validateUsername,
                 result -> binding.editEmail.setError("Please enter a valid Email address."));
     }
+
+    /**
+     * Private helper method to check if username is valid based on restrictions.
+     */
     private void validateUsername() {
         mUsernameValidator.processResult(
                 mUsernameValidator.apply(binding.editUsername.getText().toString().trim()),
                 this::validatePassword,
                 result -> binding.editUsername.setError("Please enter a valid user name of length 3 or more."));
     }
+
+    /**
+     * Private helper method to check if password is valid based on restrictions.
+     */
     private void validatePassword() {
         mPassWordValidator.processResult(
                 mPassWordValidator.apply(binding.editPassword1.getText().toString()),
@@ -88,6 +105,9 @@ public class RegisterFragment extends Fragment {
                 result -> binding.editPassword1.setError("Please enter a valid Password."));
     }
 
+    /**
+     * Private helper method to check if both passwords are matching based on restrictions.
+     */
     private void validateMatchPassword() {
         mPassWordMatchValidator.processResult(
                 mPassWordValidator.apply(binding.editPassword2.getText().toString()),
@@ -95,6 +115,9 @@ public class RegisterFragment extends Fragment {
                 result -> binding.editPassword2.setError("Passwords do not match"));
     }
 
+    /**
+     * Private helper method to verify with server to register the user.
+     */
     private void verifyAuthWithServer() {
         mRegisterModel.connect(
                 binding.editFirst.getText().toString(),
@@ -132,12 +155,17 @@ public class RegisterFragment extends Fragment {
             Log.d("JSON Response", "No Response");
         }
     }
+
+    /**
+     * Navigates fragment to verify on successful register.
+     * @param email the email of the new user.
+     * @param password the password of the new user.
+     */
     private void navigateToVerify(final String email, final String password) {
-        binding.buttonRegister.setOnClickListener(button ->
-                Navigation.findNavController(getView()).navigate(
-                        RegisterFragmentDirections
-                                .actionRegisterFragmentToVerifyFragment(binding.editEmail.getText().toString(),
-                                        binding.editPassword1.getText().toString())));
+        RegisterFragmentDirections.ActionRegisterFragmentToVerifyFragment directions =
+                RegisterFragmentDirections.actionRegisterFragmentToVerifyFragment(binding.editEmail.getText().toString(),
+                                        binding.editPassword1.getText().toString());
+        Navigation.findNavController(getView()).navigate(directions);
     }
 
 

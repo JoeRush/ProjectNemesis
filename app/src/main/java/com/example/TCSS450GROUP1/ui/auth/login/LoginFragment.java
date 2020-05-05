@@ -67,25 +67,46 @@ public class LoginFragment extends Fragment {
                 this::observeResponse);
     }
 
+    /**
+     * Private helper method to navigate to register.
+     */
     private void processRegister() {
-        Navigation.findNavController(getView()).navigate(LoginFragmentDirections.actionLoginFragmentToRegisterFragment());
+        Navigation.findNavController(getView()).
+                navigate(LoginFragmentDirections.actionLoginFragmentToRegisterFragment());
 
     }
+
+    /**
+     * Private helper method to attempt to sign in.
+     * @param button the button being clicked.
+     */
     private void attemptSignIn(final View button) {
         validateEmail();
     }
+
+    /**
+     * private helper to check if the user's email is valid.
+     */
     private void validateEmail() {
         mEmailValidator.processResult(
                 mEmailValidator.apply(binding.editEmail.getText().toString().trim()),
                 this::validatePassword,
                 result -> binding.editEmail.setError("Please enter a valid Email address."));
     }
+
+    /**
+     * private helper to check if the user's password is valid
+     */
     private void validatePassword() {
         mPassWordValidator.processResult(
                 mPassWordValidator.apply(binding.editPassword.getText().toString()),
                 this::verifyAuthWithServer,
                 result -> binding.editPassword.setError("Please enter a valid Password."));
     }
+
+    /**
+     * private helper method to verify user exists in database.
+     */
     private void verifyAuthWithServer() {
         mLoginModel.connect(
                 binding.editEmail.getText().toString(),
@@ -126,6 +147,11 @@ public class LoginFragment extends Fragment {
 
     }
 
+    /**
+     * Private helper method to navigate to main activity
+     * @param toString the user's email.
+     * @param token the jwt generated.
+     */
     private void navigateToHome(String toString, String token) {
         Navigation.findNavController(getView()).navigate(
 

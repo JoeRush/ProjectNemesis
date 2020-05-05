@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/NickBranch.iml" filepath="$PROJECT_DIR$/.idea/NickBranch.iml" />
       <module fileurl="file://$PROJECT_DIR$/TEAMONE.iml" filepath="$PROJECT_DIR$/TEAMONE.iml" group="TEAMONE" />
+      <module fileurl="file://$PROJECT_DIR$/Team-1-TCSS450-TEAMONE.iml" filepath="$PROJECT_DIR$/Team-1-TCSS450-TEAMONE.iml" group="TEAMONE" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="TEAMONE/app" />
     </modules>
   </component>
