@@ -112,7 +112,7 @@ public class LoginFragment extends Fragment {
                 }
             } else {
                 try {
-                    navigateToSuccess(
+                    navigateToHome(
                             binding.editEmail.getText().toString(),
                             response.getString("token")
                     );
@@ -126,7 +126,7 @@ public class LoginFragment extends Fragment {
 
     }
 
-    private void navigateToSuccess(String toString, String token) {
+    private void navigateToHome(String toString, String token) {
         Navigation.findNavController(getView()).navigate(
 
                 LoginFragmentDirections.actionLoginFragmentToMainActivity(toString, token));
