@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/AndroidStudioProjects-Team-1-TCSS450-TEAMONE.iml" filepath="$PROJECT_DIR$/AndroidStudioProjects-Team-1-TCSS450-TEAMONE.iml" group="TEAMONE" />
       <module fileurl="file://$PROJECT_DIR$/.idea/NickBranch.iml" filepath="$PROJECT_DIR$/.idea/NickBranch.iml" />
       <module fileurl="file://$PROJECT_DIR$/TEAMONE.iml" filepath="$PROJECT_DIR$/TEAMONE.iml" group="TEAMONE" />
       <module fileurl="file://$PROJECT_DIR$/Team-1-TCSS450-TEAMONE.iml" filepath="$PROJECT_DIR$/Team-1-TCSS450-TEAMONE.iml" group="TEAMONE" />
