@@ -1,42 +1,42 @@
 [
     {
-        "merged": "/Users/sharanjitsingh/AndroidStudioProjects/Team-1-TCSS450/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_connection.xml",
-        "source": "/Users/sharanjitsingh/AndroidStudioProjects/Team-1-TCSS450/app/src/main/res/layout/fragment_connection.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_display_message.xml",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450\\app\\src\\main\\res\\layout\\activity_display_message.xml"
     },
     {
-        "merged": "/Users/sharanjitsingh/AndroidStudioProjects/Team-1-TCSS450/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_home.xml",
-        "source": "/Users/sharanjitsingh/AndroidStudioProjects/Team-1-TCSS450/app/src/main/res/layout/fragment_home.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_chat.xml",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450\\app\\src\\main\\res\\layout\\fragment_chat.xml"
     },
     {
-        "merged": "/Users/sharanjitsingh/AndroidStudioProjects/Team-1-TCSS450/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_register.xml",
-        "source": "/Users/sharanjitsingh/AndroidStudioProjects/Team-1-TCSS450/app/src/main/res/layout/fragment_register.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_register.xml",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450\\app\\src\\main\\res\\layout\\fragment_register.xml"
     },
     {
-        "merged": "/Users/sharanjitsingh/AndroidStudioProjects/Team-1-TCSS450/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_login.xml",
-        "source": "/Users/sharanjitsingh/AndroidStudioProjects/Team-1-TCSS450/app/src/main/res/layout/fragment_login.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "/Users/sharanjitsingh/AndroidStudioProjects/Team-1-TCSS450/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_weather.xml",
-        "source": "/Users/sharanjitsingh/AndroidStudioProjects/Team-1-TCSS450/app/src/main/res/layout/fragment_weather.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450\\app\\src\\main\\res\\layout\\fragment_home.xml"
     },
     {
-        "merged": "/Users/sharanjitsingh/AndroidStudioProjects/Team-1-TCSS450/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_chat.xml",
-        "source": "/Users/sharanjitsingh/AndroidStudioProjects/Team-1-TCSS450/app/src/main/res/layout/fragment_chat.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_authentication.xml",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450\\app\\src\\main\\res\\layout\\activity_authentication.xml"
     },
     {
-        "merged": "/Users/sharanjitsingh/AndroidStudioProjects/Team-1-TCSS450/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_verify.xml",
-        "source": "/Users/sharanjitsingh/AndroidStudioProjects/Team-1-TCSS450/app/src/main/res/layout/fragment_verify.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_connection.xml",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450\\app\\src\\main\\res\\layout\\fragment_connection.xml"
     },
     {
-        "merged": "/Users/sharanjitsingh/AndroidStudioProjects/Team-1-TCSS450/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_authentication.xml",
-        "source": "/Users/sharanjitsingh/AndroidStudioProjects/Team-1-TCSS450/app/src/main/res/layout/activity_authentication.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_verify.xml",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450\\app\\src\\main\\res\\layout\\fragment_verify.xml"
     },
     {
-        "merged": "/Users/sharanjitsingh/AndroidStudioProjects/Team-1-TCSS450/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_display_message.xml",
-        "source": "/Users/sharanjitsingh/AndroidStudioProjects/Team-1-TCSS450/app/src/main/res/layout/activity_display_message.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_login.xml",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450\\app\\src\\main\\res\\layout\\fragment_login.xml"
     },
     {
-        "merged": "/Users/sharanjitsingh/AndroidStudioProjects/Team-1-TCSS450/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
-        "source": "/Users/sharanjitsingh/AndroidStudioProjects/Team-1-TCSS450/app/src/main/res/layout/activity_main.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_weather.xml",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\Team-1-TCSS450\\app\\src\\main\\res\\layout\\fragment_weather.xml"
     }
 ]
