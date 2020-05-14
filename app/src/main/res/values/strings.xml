@@ -34,4 +34,11 @@
     <string name="action_sign_in_short">Sign in</string>
     <string name="action_register_short">Register</string>
 
+    <string name="Contacts">Contacts</string>
+    <string name="ADD_Contacts"> ADD Contacts</string>
+    <string name="Remove_Contacts">Remove Contacts</string>
+    <string name="Edit_Contacts">Edit Contacts</string>
+    <string name="View_Contacts">View Contacts</string>
+
+
 </resources>

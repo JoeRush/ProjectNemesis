@@ -1165,6 +1165,11 @@ id action_verifyFragment_to_loginFragment
 id actions
 id activity_chooser_view_content
 id add
+id add_cntbutton
+id add_contacts
+id add_email
+id add_name
+id add_page
 id alertTitle
 id all
 id always
@@ -1176,6 +1181,7 @@ id beginning
 id blocking
 id bottom
 id button
+id button2
 id buttonPanel
 id button_register
 id button_sign_in
@@ -1208,6 +1214,9 @@ id dialog_button
 id dimensions
 id direct
 id disableHome
+id editText4
+id editText5
+id edit_contacs
 id edit_email
 id edit_first
 id edit_last
@@ -1235,6 +1244,9 @@ id ghost_view
 id gone
 id group_divider
 id groups
+id guideline
+id guideline2
+id guideline3
 id guideline_fifty
 id home
 id homeAsUp
@@ -1273,6 +1285,7 @@ id nav_host_fragment_container
 id nav_view
 id navigation_chat
 id navigation_connections
+id navigation_contacts
 id navigation_header_container
 id navigation_home
 id navigation_weather
@@ -1282,6 +1295,7 @@ id normal
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id nun_text
 id off
 id on
 id outline
@@ -1291,11 +1305,13 @@ id parent
 id parentPanel
 id parent_matrix
 id percent
+id phone_number
 id pin
 id progress_circular
 id progress_horizontal
 id radio
 id registerFragment
+id remove_contacts
 id right
 id right_icon
 id right_side
@@ -1324,6 +1340,7 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
+id show_contacts
 id smallLabel
 id snackbar_action
 id snackbar_text
@@ -1459,8 +1476,10 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout fragment_add_contacts
 layout fragment_chat
 layout fragment_connection
+layout fragment_contacts
 layout fragment_home
 layout fragment_login
 layout fragment_register
@@ -1493,6 +1512,11 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 navigation auth_graph
 navigation main_graph
+string ADD_Contacts
+string Contacts
+string Edit_Contacts
+string Remove_Contacts
+string View_Contacts
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
