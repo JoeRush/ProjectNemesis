@@ -1295,6 +1295,7 @@ id nav_host_fragment_container
 id nav_view
 id navigation_chat
 id navigation_connections
+id navigation_contacts
 id navigation_header_container
 id navigation_home
 id navigation_settings

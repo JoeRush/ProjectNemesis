@@ -14,7 +14,10 @@
         android:id="@+id/navigation_chat"
         android:icon="@drawable/ic_chat_black_24dp"
         android:title="@string/title_chat"/>
-
+<!--    <item-->
+<!--        android:id="@+id/navigation_contacts"-->
+<!--        android:icon="@drawable/ic_contacts_black_24dp"-->
+<!--        android:title="@string/title_connections"/>-->
     <item
         android:id="@+id/navigation_connections"
         android:icon="@drawable/ic_contacts_black_24dp"

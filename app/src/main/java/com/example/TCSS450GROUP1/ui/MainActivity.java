@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
         mAppBarConfiguration = new AppBarConfiguration.Builder(R.id.navigation_home,R.id.navigation_settings,
                 R.id.navigation_chat, R.id.navigation_connections, R.id.navigation_weather).build();
+                //R.id.navigation_weather).build();
 
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);

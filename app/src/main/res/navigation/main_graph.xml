@@ -30,4 +30,8 @@
         android:name="com.example.TCSS450GROUP1.ui.home.settings.SettingsFragment"
         android:label="fragment_settings"
         tools:layout="@layout/fragment_settings" />
+    <activity
+        android:id="@+id/navigation_contacts"
+        android:name="com.example.TCSS450GROUP1.ui.connections.contacts.Contacts"
+        android:label="Contacts" />
 </navigation>
