@@ -41,7 +41,7 @@ public class VerifyFragment extends Fragment {
         FragmentVerifyBinding binding = FragmentVerifyBinding.bind(getView());
 
 
-        binding.button.setOnClickListener(button ->
+        binding.backLoginButton.setOnClickListener(button ->
                 Navigation.findNavController(getView()).navigate(
                         VerifyFragmentDirections
                                 .actionVerifyFragmentToLoginFragment()));

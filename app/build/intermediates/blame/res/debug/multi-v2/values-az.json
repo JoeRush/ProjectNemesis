@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/sharanjitsingh/AndroidStudioProjects/Team-1-TCSS450/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-az/values-az.xml",
+            "outputFile": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-az\\values-az.xml",
             "map": [
                 {
-                    "source": "/Users/sharanjitsingh/.gradle/caches/transforms-2/files-2.1/b5ccc5f67e3250218a3047c00176e6ff/appcompat-1.1.0/res/values-az/values-az.xml",
+                    "source": "C:\\Users\\jr-99\\.gradle\\caches\\transforms-2\\files-2.1\\b5ccc5f67e3250218a3047c00176e6ff\\appcompat-1.1.0\\res\\values-az\\values-az.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/sharanjitsingh/.gradle/caches/transforms-2/files-2.1/9f53cb53909029cecd1698edf8387a48/core-1.1.0/res/values-az/values-az.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "32",
-                        "startColumns": "4",
-                        "startOffsets": "3122",
-                        "endColumns": "100",
-                        "endOffsets": "3218"
-                    }
-                },
-                {
-                    "source": "/Users/sharanjitsingh/.gradle/caches/transforms-2/files-2.1/9502b2b632b01b631c70b51fcd29a357/navigation-ui-2.2.1/res/values-az/values-az.xml",
+                    "source": "C:\\Users\\jr-99\\.gradle\\caches\\transforms-2\\files-2.1\\9502b2b632b01b631c70b51fcd29a357\\navigation-ui-2.2.1\\res\\values-az\\values-az.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -52,6 +35,23 @@
                         "startOffsets": "2813,2920",
                         "endColumns": "106,118",
                         "endOffsets": "2915,3034"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\jr-99\\.gradle\\caches\\transforms-2\\files-2.1\\9f53cb53909029cecd1698edf8387a48\\core-1.1.0\\res\\values-az\\values-az.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "32",
+                        "startColumns": "4",
+                        "startOffsets": "3122",
+                        "endColumns": "100",
+                        "endOffsets": "3218"
                     }
                 }
             ]

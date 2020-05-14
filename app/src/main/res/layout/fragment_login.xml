@@ -72,7 +72,7 @@
         android:id="@+id/image_logo"
         android:layout_width="153dp"
         android:layout_height="127dp"
-        android:src="@android:mipmap/sym_def_app_icon"
+        android:src="@drawable/raccoonrain"
         app:layout_constraintBottom_toTopOf="@+id/edit_email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

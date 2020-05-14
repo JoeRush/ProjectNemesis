@@ -7,24 +7,45 @@
     <string name="hint_last">Last Name</string>
     <string name="hint_email">Email</string>
     <string name="hint_username">Username</string>
+    <string name="hint_old_password">Enter Old Password</string>
+    <string name="hint_new_password">Enter New Password</string>
     <string name="hint_password">Password</string>
 
     <string name="button_login_login">Login</string>
 
     <string name="button_login_register">register</string>
+    <string name="button_login_forgot">Forgot Password</string>
+    <string name="button_update_password">Update Password</string>
+    <string name="button_send_code">Send Code</string>
+    <string name="button_send_email">Send Email</string>
+    <string name="button_confirm_code">Confirm Code</string>
+    <string name="button_return_to_login">Return to Login</string>
     <string name="button_verification_login">Back to Login</string>
+    <string name="button_change_password">Change Password</string>
+    <string name="button_change_theme">Change Theme</string>
+    <string name="button_delete_account">Delete Account</string>
+    <string name="button_change_forgotten_password">Change Password</string>
+    <string name="button_confirm_delete">Delete Account</string>
     <string name="text_success_email">EMAIL:</string>
     <string name="text_success_useremail">EMAIL NOT PASSED</string>
     <string name="text_success_jwt">JWT:</string>
     <string name="text_verification_message">Thank you for registering! An email has been sent to the email address provided.
     Please check your email and follow the link provided!</string>
+    <string name="text_forgotten_password_message">Enter your email below then click on the button to 
+        receive an email with a code</string>
+    <string name="text_enter_your_code_received">Enter the code sent</string>
+
+
+    <string name="hint_forgotten_email">Enter Your Email</string>
+    <string name="hint_text_forgotten_code">Code sent to you</string>
     <string name="text_success_userjwt">JWT NOT PASSED</string>
     <string name="hint_retype">Retype Password</string>
 
     <string name="title_home">Home</string>
-    <string name="title_weather">Weather</string>
     <string name="title_chat">Chat</string>
+    <string name="title_settings">Settings</string>
     <string name="title_connections">Connections</string>
+    <string name="title_weather">Weather</string>
 
     <string name="action_signin">Sign In</string>
     <string name="action_next">Next</string>
@@ -39,6 +60,4 @@
     <string name="Remove_Contacts">Remove Contacts</string>
     <string name="Edit_Contacts">Edit Contacts</string>
     <string name="View_Contacts">View Contacts</string>
-
-
 </resources>
