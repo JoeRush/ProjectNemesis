@@ -1,7 +1,10 @@
 <resources>
     <string name="app_name">Team 1</string>
+    <string name="switch_sign_in">Stay Signed in</string>
+    <string name="keys_shared_prefs">My Weather Shared Prefs</string>
+    <string name="keys_prefs_jwt">Sharded Prefs JWT</string>
+    <string name="action_sign_out">Sign Out</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hint_first">First Name</string>
     <string name="hint_last">Last Name</string>
@@ -26,13 +29,14 @@
     <string name="button_delete_account">Delete Account</string>
     <string name="button_change_forgotten_password">Change Password</string>
     <string name="button_confirm_delete">Delete Account</string>
+    <string name="button_forgot_password">Forgot Password</string>
     <string name="text_success_email">EMAIL:</string>
     <string name="text_success_useremail">EMAIL NOT PASSED</string>
     <string name="text_success_jwt">JWT:</string>
     <string name="text_verification_message">Thank you for registering! An email has been sent to the email address provided.
     Please check your email and follow the link provided!</string>
-    <string name="text_forgotten_password_message">Enter your email below then click on the button to 
-        receive an email with a code</string>
+    <string name="text_forgotten_password_message">Enter your email below that you register with then
+    use the information provide to recover your account</string>
     <string name="text_enter_your_code_received">Enter the code sent</string>
 
 
@@ -46,12 +50,16 @@
     <string name="title_settings">Settings</string>
     <string name="title_connections">Connections</string>
     <string name="title_weather">Weather</string>
-
+    <string name="title_delete">Delete Account</string>
+    <string name="title_change_password_settings">Change Password</string>
+    <string name="title_change_theme">Change Theme</string>
     <string name="action_signin">Sign In</string>
     <string name="action_next">Next</string>
     <string name="action_settings">Settings</string>
     <string name="action_link">Full Post</string>
-
+    <string name="action_change_password">Change Password</string>
+    <string name="action_change_theme">Change Theme</string>
+    <string name="action_delete_account">Delete Account</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="action_register_short">Register</string>
 
@@ -60,4 +68,5 @@
     <string name="Remove_Contacts">Remove Contacts</string>
     <string name="Edit_Contacts">Edit Contacts</string>
     <string name="View_Contacts">View Contacts</string>
+    <string name="base_url">https://team1-database.herokuapp.com/</string>
 </resources>

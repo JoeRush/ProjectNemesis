@@ -27,11 +27,36 @@
         tools:layout="@layout/fragment_connection" />
     <fragment
         android:id="@+id/navigation_settings"
-        android:name="com.example.TCSS450GROUP1.ui.home.settings.SettingsFragment"
-        android:label="fragment_settings"
-        tools:layout="@layout/fragment_settings" />
+        android:name="com.example.TCSS450GROUP1.ui.settings.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_navigation_settings_to_changeFragment"
+            app:destination="@id/changeFragment" />
+        <action
+            android:id="@+id/action_navigation_settings_to_deleteFragment"
+            app:destination="@id/deleteFragment" />
+        <action
+            android:id="@+id/action_navigation_settings_to_themeFragment"
+            app:destination="@id/themeFragment" />
+    </fragment>
     <activity
         android:id="@+id/navigation_contacts"
         android:name="com.example.TCSS450GROUP1.ui.connections.contacts.Contacts"
         android:label="Contacts" />
+    <fragment
+        android:id="@+id/deleteFragment"
+        android:name="com.example.TCSS450GROUP1.ui.settings.delete.DeleteFragment"
+        android:label="@string/title_delete"
+        tools:layout="@layout/fragment_delete" />
+    <fragment
+        android:id="@+id/changeFragment"
+        android:name="com.example.TCSS450GROUP1.ui.settings.password.ChangeFragment"
+        android:label="@string/title_change_password_settings"
+        tools:layout="@layout/fragment_change" />
+    <fragment
+        android:id="@+id/themeFragment"
+        android:name="com.example.TCSS450GROUP1.ui.settings.theme.ThemeFragment"
+        android:label="@string/title_change_theme"
+        tools:layout="@layout/fragment_theme" />
 </navigation>

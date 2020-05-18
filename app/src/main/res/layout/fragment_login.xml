@@ -7,6 +7,19 @@
     android:layout_height="match_parent"
     tools:context=".ui.auth.login.LoginFragment">
 
+    <Switch
+        android:id="@+id/switch_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:checked="true"
+        android:text="Switch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_sign_in"
+        tools:text="@string/switch_sign_in" />
+
     <EditText
         android:id="@+id/edit_email"
         android:layout_width="0dp"
@@ -18,7 +31,6 @@
         android:ems="10"
         android:hint="@string/hint_email"
         android:inputType="textEmailAddress"
-        android:text="uwnetid5@fake.email.com"
         app:layout_constraintBottom_toTopOf="@+id/guideline_fifty"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -41,7 +53,6 @@
         android:hint="@string/hint_password"
         android:importantForAutofill="no"
         android:inputType="textPassword"
-        android:text="test5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline_fifty" />
@@ -77,5 +88,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_forgot"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/button_forgot_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_password" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,13 +7,18 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
 import com.example.TCSS450GROUP1.R;
+import com.example.TCSS450GROUP1.model.PushyTokenViewModel;
+import com.example.TCSS450GROUP1.model.UserInfoViewModel;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.internal.NavigationMenuItemView;
 
 public class MainActivity extends AppCompatActivity {
     private AppBarConfiguration mAppBarConfiguration;
@@ -47,19 +52,58 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu){
-        getMenuInflater().inflate(R.menu.toolbar,menu);
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.drop_down, menu);
         return true;
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item){
+    public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
 
-        if(id == R.id.action_settings){
-            Log.d("SETTINGS", "Clicked");
+        if (id == R.id.action_sign_out) {
+            signOut();
+            return true;
+        } else if( id == R.id.action_change_password) {
+            changePassword();
+            return true;
+        } else if( id == R.id.action_change_theme) {
+            changeTheme();
+            return true;
+        } else if (id == R.id.action_delete) {
+            deleteAccount();
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    private void deleteAccount() {
+
+    }
+
+    private void changeTheme() {
+    }
+
+    private void changePassword() {
+    }
+
+    private void signOut() {
+        SharedPreferences prefs =
+                getSharedPreferences(
+                        getString(R.string.keys_shared_prefs),
+                        Context.MODE_PRIVATE);
+
+        prefs.edit().remove(getString(R.string.keys_prefs_jwt)).apply();
+        //End the app completely
+        PushyTokenViewModel model = new ViewModelProvider(this)
+                .get(PushyTokenViewModel.class);
+        //when we hear back from the web service quit
+        model.addResponseObserver(this, result -> finishAndRemoveTask());
+
+        model.deleteTokenFromWebservice(
+                new ViewModelProvider(this)
+                        .get(UserInfoViewModel.class)
+                        .getJWT()
+        );
     }
 }

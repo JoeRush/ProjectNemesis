@@ -16,7 +16,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Copy_of_Copy_of_Pixel_3_API_24" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3_API_24" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -32,26 +32,32 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="layoutResourceFile" />
         <option value="resourceFile" />
+        <option value="valueResourceFile" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1bPjr9Tuppyd2A3Zy8ci0Ins1bk" />
   <component name="PropertiesComponent">
-    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_2_API_24_for_1" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-05-14T05:58:13.815Z" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/layout" />
-    <property name="project.structure.last.edited" value="Variables" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_3_API_24" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-05-17T22:20:51.660Z" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lab-3-Authentication" />
+    <property name="project.structure.last.edited" value="Dependencies" />
     <property name="project.structure.proportion" value="0.17" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.TCSS450GROUP1.ui" />
+      <recent name="com.example.TCSS450GROUP1.ui.auth" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.example.TCSS450GROUP1.ui.connections.contacts" />
       <recent name="com.example.TCSS450GROUP1.model" />
+      <recent name="com.example.TCSS450GROUP1.ui.settings.delete" />
+      <recent name="com.example.TCSS450GROUP1.ui.connections.contacts" />
       <recent name="com.example.TCSS450GROUP1.io" />
       <recent name="com.example.TCSS450GROUP1.ui.auth.login" />
-      <recent name="com.example.TCSS450GROUP1.ui.auth.register" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\res\layout" />
