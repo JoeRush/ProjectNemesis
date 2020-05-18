@@ -18,6 +18,8 @@ import android.view.ViewGroup;
 import com.auth0.android.jwt.JWT;
 import com.example.TCSS450GROUP1.R;
 import com.example.TCSS450GROUP1.databinding.FragmentLoginBinding;
+import com.example.TCSS450GROUP1.model.PushyTokenViewModel;
+import com.example.TCSS450GROUP1.model.UserInfoViewModel;
 import com.example.TCSS450GROUP1.util.PasswordValidator;
 
 import org.json.JSONException;
@@ -27,6 +29,8 @@ import org.json.JSONObject;
  * A simple {@link Fragment} subclass.
  */
 public class LoginFragment extends Fragment {
+    private PushyTokenViewModel mPushyTokenViewModel;
+    private UserInfoViewModel mUserViewModel;
     private FragmentLoginBinding binding;
     private LoginViewModel mLoginModel;
     private PasswordValidator mEmailValidator = PasswordValidator.checkPwdLength(2)
@@ -43,6 +47,8 @@ public class LoginFragment extends Fragment {
         super.onCreate(savedInstanceState);
         mLoginModel = new ViewModelProvider(getActivity())
                 .get(LoginViewModel.class);
+        mPushyTokenViewModel = new ViewModelProvider(getActivity())
+                .get(PushyTokenViewModel.class);
     }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -69,8 +75,16 @@ public class LoginFragment extends Fragment {
         mLoginModel.addResponseObserver(
                 getViewLifecycleOwner(),
                 this::observeResponse);
+        mPushyTokenViewModel.addTokenObserver(getViewLifecycleOwner(), token ->
+                binding.buttonSignIn.setEnabled(!token.isEmpty()));
+        mPushyTokenViewModel.addResponseObserver(
+                getViewLifecycleOwner(),
+                this::observePushyPutResponse);
     }
 
+    private void sendPushyToken() {
+        mPushyTokenViewModel.sendTokenToWebservice(mUserViewModel.getJWT());
+    }
     private void processForgotPassword() {
         Navigation.findNavController(getView()).navigate(LoginFragmentDirections.actionLoginFragmentToForgotFragment());
     }
@@ -120,10 +134,16 @@ public class LoginFragment extends Fragment {
                 }
             } else {
                 try {
-                    navigateToHome(
-                            binding.editEmail.getText().toString(),
-                            response.getString("token")
-                    );
+                    mUserViewModel = new ViewModelProvider(getActivity(),
+                            new UserInfoViewModel.UserInfoViewModelFactory(
+                                    binding.editEmail.getText().toString(),
+                                    response.getString("token"), "temp"
+                            )).get(UserInfoViewModel.class);
+                    sendPushyToken();
+//                    navigateToHome(
+//                            binding.editEmail.getText().toString(),
+//                            response.getString("token")
+//                    );
                 } catch (JSONException e) {
                     Log.e("JSON Parse Error", e.getMessage());
                 }
@@ -133,7 +153,26 @@ public class LoginFragment extends Fragment {
         }
 
     }
-
+    /**
+     * An observer on the HTTP Response from the web server. This observer should be
+     * attached to PushyTokenViewModel.
+     *
+     * @param response the Response from the server
+     */
+    private void observePushyPutResponse(final JSONObject response) {
+        if (response.length() > 0) {
+            if (response.has("code")) {
+                //this error cannot be fixed by the user changing credentials...
+                binding.editEmail.setError(
+                        "Error Authenticating on Push Token. Please contact support");
+            } else {
+                navigateToHome(
+                        binding.editEmail.getText().toString(),
+                        mUserViewModel.getJWT()
+                );
+            }
+        }
+    }
     private void navigateToHome(String toString, String token) {
         if (binding.switchSignin.isChecked()) {
             SharedPreferences prefs =

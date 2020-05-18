@@ -64,16 +64,17 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.action_sign_out) {
             signOut();
             return true;
-        } else if( id == R.id.action_change_password) {
-            changePassword();
-            return true;
-        } else if( id == R.id.action_change_theme) {
-            changeTheme();
-            return true;
-        } else if (id == R.id.action_delete) {
-            deleteAccount();
-            return true;
         }
+//        } else if( id == R.id.action_change_password) {
+//            changePassword();
+//            return true;
+//        } else if( id == R.id.action_change_theme) {
+//            changeTheme();
+//            return true;
+//        } else if (id == R.id.action_delete) {
+//            deleteAccount();
+//            return true;
+//        }
         return super.onOptionsItemSelected(item);
     }
 

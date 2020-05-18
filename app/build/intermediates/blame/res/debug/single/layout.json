@@ -16,10 +16,6 @@
         "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\layout\\fragment_theme.xml"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_forgotten_change_password.xml",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\layout\\fragment_forgotten_change_password.xml"
-    },
-    {
         "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_weather.xml",
         "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\layout\\fragment_weather.xml"
     },
