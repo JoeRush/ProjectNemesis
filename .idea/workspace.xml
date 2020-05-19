@@ -43,7 +43,7 @@
   <component name="PropertiesComponent">
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_3_API_24_for_2" />
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-05-19T21:28:59.168Z" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lab-3-Authentication" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/layout" />
     <property name="project.structure.last.edited" value="Dependencies" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -55,16 +55,16 @@
       <recent name="com.example.TCSS450GROUP1.ui.auth" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.TCSS450GROUP1.ui.connections" />
+      <recent name="com.example.TCSS450GROUP1.ui.connections.contacts" />
       <recent name="com.example.TCSS450GROUP1.ui.chat" />
       <recent name="com.example.TCSS450GROUP1.ui.settings.password" />
       <recent name="com.example.TCSS450GROUP1.model" />
-      <recent name="com.example.TCSS450GROUP1.services" />
-      <recent name="com.example.TCSS450GROUP1.ui.settings.delete" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\res\layout" />
       <recent name="C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\res\drawable" />
       <recent name="C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\res\values" />
-      <recent name="C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\res\layout" />
       <recent name="C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\java\com\example\TCSS450GROUP1\ui\chat" />
     </key>
   </component>

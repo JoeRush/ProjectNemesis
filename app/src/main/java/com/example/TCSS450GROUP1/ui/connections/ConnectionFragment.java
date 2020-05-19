@@ -1,14 +1,20 @@
 package com.example.TCSS450GROUP1.ui.connections;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
+
 import com.example.TCSS450GROUP1.R;
+import com.example.TCSS450GROUP1.databinding.FragmentConnectionBinding;
+import com.example.TCSS450GROUP1.model.UserInfoViewModel;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -24,6 +30,11 @@ public class ConnectionFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+   // private Button viewAll;
+
+  private  ConnectionView mConnectionView;
+
 
     public ConnectionFragment() {
         // Required empty public constructor
@@ -48,12 +59,18 @@ public class ConnectionFragment extends Fragment {
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        mConnectionView = new ViewModelProvider(getActivity()).get(ConnectionView.class);
+        UserInfoViewModel model = new ViewModelProvider(getActivity())
+                .get(UserInfoViewModel.class);
+        Log.i("CONTACT", model.getJWT());
+        mConnectionView.connectGet(model.getJWT());
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
     }
 
     @Override
@@ -62,4 +79,23 @@ public class ConnectionFragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_connection, container, false);
     }
+
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        FragmentConnectionBinding binding = FragmentConnectionBinding.bind(getView());
+
+        mConnectionView.addContactListObserver(getViewLifecycleOwner(), contactList -> {
+            if (!contactList.isEmpty()) {
+                binding.listRoot.setAdapter(
+                        new ContactRecyclerViewAdapter(contactList)
+                );
+                binding.layoutWait.setVisibility(View.GONE);
+            }
+        });
+
+    }
+
+
 }

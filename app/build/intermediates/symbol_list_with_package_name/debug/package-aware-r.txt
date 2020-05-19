@@ -1646,6 +1646,7 @@ id icon
 id icon_group
 id ifRoom
 id image
+id imageContact
 id image_logo
 id info
 id invisible
@@ -1656,12 +1657,14 @@ id largeLabel
 id layoiut_root
 id layout_inner
 id layout_root
+id layout_wait
 id layout_weather
 id left
 id line1
 id line3
 id listMode
 id list_item
+id list_root
 id loginFragment
 id mainActivity
 id main_graph
@@ -1729,6 +1732,7 @@ id peekHeight
 id percent
 id phone_number
 id pin
+id progressBar
 id progress_circular
 id progress_horizontal
 id radio
@@ -1805,6 +1809,7 @@ id test_checkbox_android_button_tint
 id test_checkbox_app_button_tint
 id text
 id text2
+id textContactUsername
 id textEnd
 id textSpacerNoButtons
 id textSpacerNoTitle
@@ -1931,6 +1936,7 @@ layout fragment_change
 layout fragment_chat
 layout fragment_chat_message
 layout fragment_connection
+layout fragment_connection_view
 layout fragment_contacts
 layout fragment_delete
 layout fragment_forgot
