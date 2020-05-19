@@ -1,5 +1,7 @@
 package com.example.TCSS450GROUP1.ui.settings.delete;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -14,6 +16,7 @@ import android.view.ViewGroup;
 
 import com.example.TCSS450GROUP1.R;
 import com.example.TCSS450GROUP1.databinding.FragmentDeleteBinding;
+import com.example.TCSS450GROUP1.model.PushyTokenViewModel;
 import com.example.TCSS450GROUP1.model.UserInfoViewModel;
 
 import org.json.JSONException;
@@ -79,17 +82,18 @@ public class DeleteFragment extends Fragment {
                     Log.e("JSON Parse Error", e.getMessage());
                 }
             } else {
-                try {
-                    mUserViewModel = new ViewModelProvider(getActivity(),
-                            new UserInfoViewModel.UserInfoViewModelFactory(
-                                    binding.editEmail.getText().toString(),
-                                    response.getString("token"),
-                                    "username"
-                            )).get(UserInfoViewModel.class);
+                SharedPreferences prefs =
+                        getActivity().getSharedPreferences(
+                                getString(R.string.keys_shared_prefs),
+                                Context.MODE_PRIVATE);
+                prefs.edit().remove(getString(R.string.keys_prefs_jwt)).apply();
+                //End the app completely
+                PushyTokenViewModel model = new ViewModelProvider(this)
+                        .get(PushyTokenViewModel.class);
+                //when we hear back from the web service quit
+                model.addResponseObserver(this, result -> getActivity().finishAndRemoveTask());
+                    getActivity().finish();
 
-                } catch (JSONException e) {
-                    Log.e("JSON Parse Error", e.getMessage());
-                }
             }
         } else {
             Log.d("JSON Response", "No Response");

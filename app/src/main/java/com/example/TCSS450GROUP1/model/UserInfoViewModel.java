@@ -22,6 +22,7 @@ public class UserInfoViewModel extends ViewModel {
     public String getJWT() {
         return mJWT;
     }
+    public String getUsername() { return mUsername; }
     public static class UserInfoViewModelFactory implements ViewModelProvider.Factory {
         private final String email;
         private final String jwt;
