@@ -73,4 +73,8 @@
     <string name="View_Contacts">View Contacts</string>
     <string name="base_url">https://team1-database.herokuapp.com/</string>
     <string name="switch_theme">Switch Theme</string>
+    <string name="City_Name">City Name</string>
+    <string name="Zip_Code">Zip Code</string>
+    <string name="Five_Day_Title">5-Day Forecast</string>
+    <string name="Hourly_Title">Hourly Forecast</string>
 </resources>

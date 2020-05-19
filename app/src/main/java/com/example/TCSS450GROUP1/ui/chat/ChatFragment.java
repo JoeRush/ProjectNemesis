@@ -25,7 +25,6 @@ public class ChatFragment extends Fragment {
     //The chat ID for "global" chat
     private static final int HARD_CODED_CHAT_ID = 1;
     private ChatSendViewModel mSendModel;
-
     private ChatViewModel mChatModel;
     private UserInfoViewModel mUserModel;
 
@@ -38,9 +37,9 @@ public class ChatFragment extends Fragment {
         super.onCreate(savedInstanceState);
         ViewModelProvider provider = new ViewModelProvider(getActivity());
         mUserModel = provider.get(UserInfoViewModel.class);
-        // mChatModel = provider.get(ChatViewModel.class);
+        mSendModel = provider.get(ChatSendViewModel.class);
+        mChatModel = provider.get(ChatViewModel.class);
         mChatModel.getFirstMessages(HARD_CODED_CHAT_ID, mUserModel.getJWT());
-        // mSendModel = provider.get(ChatSendViewModel.class);
     }
 
     @Override
@@ -91,9 +90,7 @@ public class ChatFragment extends Fragment {
             mSendModel.sendMessage(HARD_CODED_CHAT_ID,
                     mUserModel.getJWT(),
                     binding.editMessage.getText().toString());
-//when we get the response back from the server, clear the edittext
         });
-        mSendModel.addResponseObserver(getViewLifecycleOwner(), response ->
-                binding.editMessage.setText(""));
     }
 }
+

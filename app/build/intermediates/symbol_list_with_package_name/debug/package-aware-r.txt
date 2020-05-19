@@ -1555,6 +1555,8 @@ id checked
 id chip
 id chip_group
 id chronometer
+id city_name
+id city_name_button
 id clear_text
 id clip_horizontal
 id clip_vertical
@@ -1568,6 +1570,11 @@ id custom
 id customPanel
 id cut
 id date_picker_actions
+id day_five_weather
+id day_four_weather
+id day_one_weather
+id day_three_weather
+id day_two_weather
 id decor_content_parent
 id default_activity_button
 id deleteFragment
@@ -1610,6 +1617,7 @@ id fill_vertical
 id filled
 id filter_chip
 id fitToContents
+id five_day_title
 id fixed
 id forever
 id forgotFragment
@@ -1628,6 +1636,12 @@ id guideline_fifty
 id hideable
 id home
 id homeAsUp
+id hour_five
+id hour_four
+id hour_one
+id hour_three
+id hour_two
+id hourly_title
 id icon
 id icon_group
 id ifRoom
@@ -1642,6 +1656,7 @@ id largeLabel
 id layoiut_root
 id layout_inner
 id layout_root
+id layout_weather
 id left
 id line1
 id line3
@@ -1720,6 +1735,8 @@ id radio
 id recycler_messages
 id registerFragment
 id remove_contacts
+id requested_city_name
+id requested_zip_code
 id right
 id right_icon
 id right_side
@@ -1783,6 +1800,7 @@ id tag_screen_reader_focusable
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
+id temp
 id test_checkbox_android_button_tint
 id test_checkbox_app_button_tint
 id text
@@ -1823,9 +1841,11 @@ id verifyFragment
 id view_offset_helper
 id visible
 id visible_removing_fragment_view_tag
+id weather_type
 id withText
 id wrap
 id wrap_content
+id zip_code_button
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
 integer app_bar_elevation_anim_duration
@@ -1989,10 +2009,14 @@ navigation auth_graph
 navigation main_graph
 plurals mtrl_badge_content_description
 string ADD_Contacts
+string City_Name
 string Contacts
 string Edit_Contacts
+string Five_Day_Title
+string Hourly_Title
 string Remove_Contacts
 string View_Contacts
+string Zip_Code
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description

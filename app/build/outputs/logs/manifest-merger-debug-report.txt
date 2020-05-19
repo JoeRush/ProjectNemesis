@@ -130,6 +130,18 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:25:17-77
 	android:name
 		ADDED from C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:25:27-74
+receiver#com.example.TCSS450GROUP1.ui.chat.PushReceiver
+ADDED from C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:33:9-38:20
+	android:exported
+		ADDED from C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:33:81-105
+	android:name
+		ADDED from C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:33:19-80
+intent-filter#action:name:pushy.me
+ADDED from C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:34:13-37:29
+action#pushy.me
+ADDED from C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:36:17-51
+	android:name
+		ADDED from C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:36:25-48
 receiver#me.pushy.sdk.receivers.PushyUpdateReceiver
 ADDED from C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:42:9-46:20
 	android:exported

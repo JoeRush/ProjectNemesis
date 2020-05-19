@@ -11,6 +11,7 @@ import androidx.navigation.ui.NavigationUI;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
@@ -21,13 +22,16 @@ import com.example.TCSS450GROUP1.databinding.ActivityMainBinding;
 import com.example.TCSS450GROUP1.model.NewMessageCountViewModel;
 import com.example.TCSS450GROUP1.model.PushyTokenViewModel;
 import com.example.TCSS450GROUP1.model.UserInfoViewModel;
+import com.example.TCSS450GROUP1.ui.chat.PushReceiver;
+import com.google.android.material.badge.BadgeDrawable;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.example.TCSS450GROUP1.ui.chat.ChatMessage;
 import com.example.TCSS450GROUP1.ui.chat.ChatViewModel;
 
 public class MainActivity extends AppCompatActivity {
     private AppBarConfiguration mAppBarConfiguration;
-    //private MainPushMessageReceiver mPushMessageReceiver;
+    private MainPushMessageReceiver mPushMessageReceiver;
+    private NewMessageCountViewModel getmNewMessageModel;
     private ActivityMainBinding binding;
     private NewMessageCountViewModel mNewMessageModel;
     private SharedPreferences.Editor sharedTheme;
@@ -39,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         mSharedTheme = getSharedPreferences("currentTheme", MODE_PRIVATE);
-
+        mNewMessageModel = new ViewModelProvider(this).get(NewMessageCountViewModel.class);
         //getTheme().applyStyle(R.style.OverlayThemePink, true);
         mSharedTheme.getString(THEME_KEY, "default");
         if(mSharedTheme.getString(THEME_KEY, "default").equals("default")) {
@@ -71,27 +75,27 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
-//        navController.addOnDestinationChangedListener((controller, destination, arguments) -> {
-//            if (destination.getId() == R.id.navigation_chat) {
-//                //When the user navigates to the chats page, reset the new message count.
-//                //This will need some extra logic for your project as it should have
-//                //multiple chat rooms.
-//                mNewMessageModel.reset();
-//            }
-//        });
-//        mNewMessageModel.addMessageCountObserver(this, count -> {
-//            BadgeDrawable badge = binding.navView.getOrCreateBadge(R.id.navigation_chat);
-//            badge.setMaxCharacterCount(2);
-//            if (count > 0) {
-//                //new messages! update and show the notification badge.
-//                badge.setNumber(count);
-//                badge.setVisible(true);
-//            } else {
-//                //user did some action to clear the new messages, remove the badge
-//                badge.clearNumber();
-//                badge.setVisible(false);
-//            }
-//        });
+        navController.addOnDestinationChangedListener((controller, destination, arguments) -> {
+            if (destination.getId() == R.id.navigation_chat) {
+                //When the user navigates to the chats page, reset the new message count.
+                //This will need some extra logic for your project as it should have
+                //multiple chat rooms.
+                mNewMessageModel.reset();
+            }
+        });
+        mNewMessageModel.addMessageCountObserver(this, count -> {
+            BadgeDrawable badge = binding.navView.getOrCreateBadge(R.id.navigation_chat);
+            badge.setMaxCharacterCount(2);
+            if (count > 0) {
+                //new messages! update and show the notification badge.
+                badge.setNumber(count);
+                badge.setVisible(true);
+            } else {
+                //user did some action to clear the new messages, remove the badge
+                badge.clearNumber();
+                badge.setVisible(false);
+            }
+        });
 
     }
 
@@ -107,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
 
         return true;
     }
-
+    
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
@@ -192,7 +196,22 @@ public class MainActivity extends AppCompatActivity {
                         .getJWT()
         );
     }
-
+    @Override
+    public void onResume() {
+        super.onResume();
+        if (mPushMessageReceiver == null) {
+            mPushMessageReceiver = new MainPushMessageReceiver();
+        }
+        IntentFilter iFilter = new IntentFilter(PushReceiver.RECEIVED_NEW_MESSAGE);
+        registerReceiver(mPushMessageReceiver, iFilter);
+    }
+    @Override
+    public void onPause() {
+        super.onPause();
+        if (mPushMessageReceiver != null){
+            unregisterReceiver(mPushMessageReceiver);
+        }
+    }
     /**
      * A BroadcastReceiver that listens for messages sent from PushReceiver
      */
