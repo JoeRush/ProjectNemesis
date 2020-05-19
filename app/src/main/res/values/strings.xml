@@ -63,11 +63,14 @@
     <string name="action_delete_account">Delete Account</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="action_register_short">Register</string>
-
+    <string name="action_default_color">Default Color</string>
+    <string name="action_teal_theme">Teal Theme</string>
+    <string name="action_pink_theme">Pink Theme</string>
     <string name="Contacts">Contacts</string>
     <string name="ADD_Contacts"> ADD Contacts</string>
     <string name="Remove_Contacts">Remove Contacts</string>
     <string name="Edit_Contacts">Edit Contacts</string>
     <string name="View_Contacts">View Contacts</string>
     <string name="base_url">https://team1-database.herokuapp.com/</string>
+    <string name="switch_theme">Switch Theme</string>
 </resources>

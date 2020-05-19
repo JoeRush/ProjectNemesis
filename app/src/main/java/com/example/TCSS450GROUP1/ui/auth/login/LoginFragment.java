@@ -1,6 +1,7 @@
 package com.example.TCSS450GROUP1.ui.auth.login;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 
@@ -14,6 +15,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CompoundButton;
 
 import com.auth0.android.jwt.JWT;
 import com.example.TCSS450GROUP1.R;
@@ -72,6 +74,12 @@ public class LoginFragment extends Fragment {
         binding.buttonToRegister.setOnClickListener(button->processRegister());
         binding.buttonForgot.setOnClickListener(button->processForgotPassword());
         binding.buttonSignIn.setOnClickListener(this::attemptSignIn);
+        SharedPreferences preferences = getActivity().getSharedPreferences("theme",Context.MODE_PRIVATE);
+
+
+
+
+
         mLoginModel.addResponseObserver(
                 getViewLifecycleOwner(),
                 this::observeResponse);
@@ -81,6 +89,9 @@ public class LoginFragment extends Fragment {
                 getViewLifecycleOwner(),
                 this::observePushyPutResponse);
     }
+
+
+
 
     private void sendPushyToken() {
         mPushyTokenViewModel.sendTokenToWebservice(mUserViewModel.getJWT());

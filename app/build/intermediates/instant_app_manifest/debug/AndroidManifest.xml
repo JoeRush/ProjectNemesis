@@ -26,7 +26,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.TCSS450GROUP1.ui.MainActivity" />
+        <activity android:name="com.example.TCSS450GROUP1.ui.MainActivity" >
+        </activity>
         <activity android:name="com.example.TCSS450GROUP1.ui.AuthenticationActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

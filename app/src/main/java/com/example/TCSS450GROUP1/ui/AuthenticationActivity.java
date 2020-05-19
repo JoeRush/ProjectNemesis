@@ -8,7 +8,10 @@ import androidx.core.content.ContextCompat;
 import androidx.lifecycle.ViewModelProvider;
 
 import android.Manifest;
+import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 
@@ -21,6 +24,7 @@ public class AuthenticationActivity extends AppCompatActivity {
     private final int READ_WRITE_PERMISSION_CODE = 1000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_authentication);
         //If it is not already running, start the Pushy listening service
@@ -41,6 +45,8 @@ public class AuthenticationActivity extends AppCompatActivity {
             initiatePushyTokenRequest();
         }
     }
+
+
     private void initiatePushyTokenRequest() {
         new ViewModelProvider(this).get(PushyTokenViewModel.class).retrieveToken();
     }

@@ -58,6 +58,9 @@ public class DeleteFragment extends Fragment {
 
         binding.button.setOnClickListener(this::attemptDelete);
 
+        mDeleteModel.addResponseObserver(
+                getViewLifecycleOwner(),
+                this::observeDeletionResponse);
     }
 
     private void attemptDelete(View view) {

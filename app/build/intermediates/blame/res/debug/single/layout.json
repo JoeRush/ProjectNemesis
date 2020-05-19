@@ -64,6 +64,10 @@
         "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\layout\\fragment_forgot.xml"
     },
     {
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\theme_switch.xml",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\layout\\theme_switch.xml"
+    },
+    {
         "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_contacts.xml",
         "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\layout\\fragment_contacts.xml"
     },

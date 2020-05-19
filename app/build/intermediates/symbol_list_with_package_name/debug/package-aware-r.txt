@@ -915,6 +915,12 @@ color mtrl_textinput_hovered_box_stroke_color
 color notification_action_color_filter
 color notification_icon_bg_color
 color notification_material_background_media_default_color
+color pink_AccentColor
+color pink_primary
+color pink_primaryDark
+color pink_primaryLight
+color pink_primaryTextColor
+color pink_secondaryTextColor
 color primaryColor
 color primaryDarkColor
 color primaryLightColor
@@ -944,6 +950,12 @@ color switch_thumb_material_dark
 color switch_thumb_material_light
 color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
+color teal_AccentColor
+color teal_primary
+color teal_primaryDark
+color teal_primaryLight
+color teal_primaryTextColor
+color teal_secondaryTextColor
 color test_mtrl_calendar_day
 color test_mtrl_calendar_day_selected
 color tooltip_background_dark
@@ -1470,6 +1482,7 @@ id accessibility_custom_action_7
 id accessibility_custom_action_8
 id accessibility_custom_action_9
 id action0
+id action_PINK
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -1481,6 +1494,7 @@ id action_change_password
 id action_change_theme
 id action_container
 id action_context_bar
+id action_defaultColor
 id action_delete
 id action_divider
 id action_forgotFragment_to_loginFragment2
@@ -1536,7 +1550,6 @@ id center_vertical
 id chains
 id changeFragment
 id change_pw_button
-id change_theme_button
 id checkbox
 id checked
 id chip
@@ -1788,6 +1801,7 @@ id textinput_counter
 id textinput_error
 id textinput_helper_text
 id themeFragment
+id theme_switch
 id time
 id title
 id titleDividerNoCustom
@@ -1966,6 +1980,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+layout theme_switch
 menu bottom_nav_menu
 menu drop_down
 mipmap ic_launcher
@@ -2007,14 +2022,17 @@ string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string action_change_password
 string action_change_theme
+string action_default_color
 string action_delete_account
 string action_link
 string action_next
+string action_pink_theme
 string action_register_short
 string action_settings
 string action_sign_in_short
 string action_sign_out
 string action_signin
+string action_teal_theme
 string app_name
 string appbar_scrolling_view_behavior
 string base_url
@@ -2101,6 +2119,7 @@ string path_password_strike_through
 string search_menu_title
 string status_bar_notification_info_overflow
 string switch_sign_in
+string switch_theme
 string text_enter_your_code_received
 string text_forgotten_password_message
 string text_success_email
@@ -2347,6 +2366,7 @@ style MaterialAlertDialog_MaterialComponents_Title_Panel
 style MaterialAlertDialog_MaterialComponents_Title_Panel_CenterStacked
 style MaterialAlertDialog_MaterialComponents_Title_Text
 style MaterialAlertDialog_MaterialComponents_Title_Text_CenterStacked
+style OverlayThemePink
 style Platform_AppCompat
 style Platform_AppCompat_Light
 style Platform_MaterialComponents

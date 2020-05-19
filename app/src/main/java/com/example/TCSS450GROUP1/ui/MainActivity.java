@@ -13,30 +13,47 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
 import com.example.TCSS450GROUP1.R;
 import com.example.TCSS450GROUP1.databinding.ActivityMainBinding;
-import com.google.android.material.badge.BadgeDrawable;
 import com.example.TCSS450GROUP1.model.NewMessageCountViewModel;
 import com.example.TCSS450GROUP1.model.PushyTokenViewModel;
 import com.example.TCSS450GROUP1.model.UserInfoViewModel;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.example.TCSS450GROUP1.ui.chat.PushReceiver;
 import com.example.TCSS450GROUP1.ui.chat.ChatMessage;
 import com.example.TCSS450GROUP1.ui.chat.ChatViewModel;
-import com.google.android.material.internal.NavigationMenuItemView;
 
 public class MainActivity extends AppCompatActivity {
     private AppBarConfiguration mAppBarConfiguration;
     //private MainPushMessageReceiver mPushMessageReceiver;
     private ActivityMainBinding binding;
     private NewMessageCountViewModel mNewMessageModel;
+    private SharedPreferences.Editor sharedTheme;
+    private SharedPreferences  mSharedTheme;
+    private static final String THEME_KEY = "currentTheme";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //setTheme(getSavedTheme());
+
+
+        mSharedTheme = getSharedPreferences("currentTheme", MODE_PRIVATE);
+
+        //getTheme().applyStyle(R.style.OverlayThemePink, true);
+        mSharedTheme.getString(THEME_KEY, "default");
+        if(mSharedTheme.getString(THEME_KEY, "default").equals("default")) {
+            getTheme().applyStyle(R.style.AppTheme, true);
+        } else {
+            getTheme().applyStyle(R.style.OverlayThemePink, true);
+        }
         super.onCreate(savedInstanceState);
+        //boolean theme = preferences.getBoolean("theme", false);
+//
+//        if(theme) {
+//            setTheme(R.style.AppTheme_Dark_NoActionBar);
+//       }
+
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
@@ -87,36 +104,71 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.drop_down, menu);
+
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
 
-        if (id == R.id.action_sign_out) {
-            signOut();
-            return true;
+        int id = item.getItemId();
+        switch (item.getItemId()) {
+            case R.id.action_sign_out:
+                signOut();
+                break;
+            case R.id.action_change_password:
+                changePassword();
+                break;
+            case R.id.action_delete:
+                deleteAccount();
+                break;
+            case R.id.action_defaultColor:
+                mSharedTheme.edit().putString(THEME_KEY, "default").apply();
+                //recreate();
+                Intent intent= getIntent();
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                finish();
+                startActivity(intent);
+              //  toggleTheme(false);
+                break;
+            case R.id.action_PINK:
+                mSharedTheme.edit().putString(THEME_KEY, "pink").apply();
+                //recreate();
+                Intent intentPink = getIntent();
+                intentPink.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                finish();
+                startActivity(intentPink);
+              //  toggleTheme(true);
+                break;
+            default:
+                super.onOptionsItemSelected(item);
+
         }
-//        } else if( id == R.id.action_change_password) {
-//            changePassword();
-//            return true;
-//        } else if( id == R.id.action_change_theme) {
-//            changeTheme();
-//            return true;
-//        } else if (id == R.id.action_delete) {
-//            deleteAccount();
-//            return true;
-//        }
-        return super.onOptionsItemSelected(item);
+        return false;
     }
+//
+//
+
 
     private void deleteAccount() {
 
     }
 
-    private void changeTheme() {
+
+    private void toggleTheme(boolean isChecked) {
+        SharedPreferences.Editor editor = getSharedPreferences("theme", MODE_PRIVATE).edit();
+
+        editor.putBoolean("theme", isChecked);
+        editor.apply();
+
+        Intent intent = getIntent();
+
+        finish();
+
+        startActivity(intent);
     }
+
+
 
     private void changePassword() {
     }
@@ -167,4 +219,5 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+
 }

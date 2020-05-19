@@ -31,14 +31,10 @@ public class SettingsFragment extends Fragment {
 
         //lamba expression example
         binding.changePwButton.setOnClickListener(button->processChange());
-        binding.changeThemeButton.setOnClickListener(button->processTheme());
         binding.deleteAccountButton.setOnClickListener(button->processDelete());
     }
 
-    private void processTheme() {
-        Navigation.findNavController(getView()).navigate(SettingsFragmentDirections.
-                actionNavigationSettingsToThemeFragment());
-    }
+
 
     private void processDelete() {
         Navigation.findNavController(getView()).
