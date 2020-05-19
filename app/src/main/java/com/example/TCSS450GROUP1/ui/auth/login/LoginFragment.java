@@ -28,7 +28,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 /**
- * A simple {@link Fragment} subclass.
+ * @author Joseph Rushford
+ * Fragment for logining into the database
  */
 public class LoginFragment extends Fragment {
     private PushyTokenViewModel mPushyTokenViewModel;

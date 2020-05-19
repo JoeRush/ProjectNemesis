@@ -24,7 +24,10 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 
-
+/**
+ * @author Joseph Rushford
+ * view model for the delete fragment
+ */
 public class DeleteViewModel extends AndroidViewModel {
 
     private MutableLiveData<JSONObject> mResponse;
@@ -44,9 +47,11 @@ public class DeleteViewModel extends AndroidViewModel {
     }
 
 
-
-
-
+    /**
+     * @author Joseph Rushford
+     * handles the error due to database connection
+     * @param error the possible error from a failed database
+     */
     private void handleError(final VolleyError error) {
         if (Objects.isNull(error.networkResponse)) {
             try {
@@ -70,6 +75,13 @@ public class DeleteViewModel extends AndroidViewModel {
             }
         }
     }
+
+    /**
+     * @author Joseph Rushford
+     * database connection to delete account
+     * @param email the email of the account being deleted
+     * @param password the password of the account being deleted
+     */
     public void connect(final String email, final String password) {
         String url = "http://team1-database.herokuapp.com/account";
         Request request = new JsonObjectRequest(

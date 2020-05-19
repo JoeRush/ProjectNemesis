@@ -18,7 +18,7 @@ import com.example.TCSS450GROUP1.model.UserInfoViewModel;
 
 
 /**
- * A simple {@link Fragment} subclass.
+ * @author Jaskaran Mangat
  */
 public class ChatFragment extends Fragment {
 

@@ -20,6 +20,9 @@ import com.example.TCSS450GROUP1.model.PushyTokenViewModel;
 
 import me.pushy.sdk.Pushy;
 
+/**
+ * @author  Joseph Rushford
+ */
 public class AuthenticationActivity extends AppCompatActivity {
     private final int READ_WRITE_PERMISSION_CODE = 1000;
     @Override

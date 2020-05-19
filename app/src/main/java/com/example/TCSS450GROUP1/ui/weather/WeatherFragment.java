@@ -36,6 +36,7 @@ import java.util.Date;
 import javax.net.ssl.HttpsURLConnection;
 
 /**
+ * @author Matthew Molina
  * The fragment holding the information on the weather
  */
 public class WeatherFragment extends Fragment {
@@ -75,6 +76,7 @@ public class WeatherFragment extends Fragment {
     }
 
     /**
+     * @author Matthew Molina
      * Gets the weather information for the current conditions.
      * @param response the json
      */

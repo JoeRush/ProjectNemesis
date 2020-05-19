@@ -35,6 +35,9 @@ import java.util.Objects;
 
 import javax.net.ssl.HttpsURLConnection;
 
+/**
+ * @author Matthew Molina
+ */
 public class WeatherViewModel extends AndroidViewModel {
 
     private MutableLiveData<JSONObject> mResponseCurrent;
@@ -77,6 +80,9 @@ public class WeatherViewModel extends AndroidViewModel {
         }
     }
 
+    /**
+     * @author Matthew Molina
+     */
     public void connectToWeatherCurrent() {
         try {
             Log.i("Made it:", "HERE ONE");
@@ -126,6 +132,9 @@ public class WeatherViewModel extends AndroidViewModel {
         }
     }
 
+    /**
+     * @author Matthew Molina
+     */
     public void connectToWeatherMultiple() {
         try {
             Log.i("Made it:", "HERE TWO");

@@ -11,7 +11,8 @@ import android.view.ViewGroup;
 import com.example.TCSS450GROUP1.R;
 
 /**
- * A simple {@link Fragment} subclass.
+ * @author Joseph Rushford
+ * fragment to send email to change password
  */
 public class ForgotFragment extends Fragment {
 

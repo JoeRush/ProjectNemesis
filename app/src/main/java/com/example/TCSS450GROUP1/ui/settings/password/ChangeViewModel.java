@@ -21,6 +21,10 @@ import org.json.JSONObject;
 import java.nio.charset.Charset;
 import java.util.Objects;
 
+/**
+ * View model for changing password
+ * @author  Joseph Rushford
+ */
 public class ChangeViewModel extends AndroidViewModel {
 
     private MutableLiveData<JSONObject> mResponse;
@@ -60,18 +64,26 @@ public class ChangeViewModel extends AndroidViewModel {
             }
         }
     }
+
+    /**
+     * @author Joseph Rushford
+     * database connection to account endpoint to change a persons password
+     * @param username the username the person is entering
+     * @param oldPassword the old password they are changing
+     * @param newPassword the new password they are changing
+     */
     public void connect(
                         final String username,
-                        final String oldpassword,
-                        final String newpassword
+                        final String oldPassword,
+                        final String newPassword
                         ) {
-        String url ="http://team1-database.herokuapp.com/auth";
+        String url ="http://team1-database.herokuapp.com/account/change";
         JSONObject body = new JSONObject();
         try{
 
             body.put( "username" , username);
-            body.put("oldpassword", oldpassword);
-            body.put( "newpassword", newpassword);
+            body.put("oldpassword", oldPassword);
+            body.put( "newpassword", newPassword);
         } catch (JSONException e) {
             e.printStackTrace();
         }

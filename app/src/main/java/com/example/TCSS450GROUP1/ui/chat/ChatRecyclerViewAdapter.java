@@ -18,7 +18,9 @@ import com.google.android.material.shape.CornerFamily;
 
 import java.util.List;
 
-
+/**
+ * @author Jaskaran Mangat
+ */
 public class ChatRecyclerViewAdapter extends RecyclerView.Adapter<ChatRecyclerViewAdapter.MessageViewHolder> {
 
     private final List<ChatMessage> mMessages;

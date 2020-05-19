@@ -25,7 +25,10 @@ import java.util.Objects;
 
 import com.example.TCSS450GROUP1.io.RequestQueueSingleton;
 
-
+/**
+ * @author Joseph Rushford
+ * view model for the login fragment
+ */
 public class LoginViewModel extends AndroidViewModel {
 
     private MutableLiveData<JSONObject> mResponse;

@@ -27,7 +27,10 @@ import com.google.android.material.badge.BadgeDrawable;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.example.TCSS450GROUP1.ui.chat.ChatMessage;
 import com.example.TCSS450GROUP1.ui.chat.ChatViewModel;
-
+/**
+ * Activity where most fragments take place
+ @author Joseph Rushford
+ */
 public class MainActivity extends AppCompatActivity {
     private AppBarConfiguration mAppBarConfiguration;
     private MainPushMessageReceiver mPushMessageReceiver;
@@ -99,6 +102,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * @author Joseph Rushford
+     * @return navigation bar
+     */
     @Override
     public boolean onSupportNavigateUp(){
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
@@ -111,7 +118,13 @@ public class MainActivity extends AppCompatActivity {
 
         return true;
     }
-    
+
+    /**
+     * Creates setting drop down menu with on clicklisteners
+     * @author Joseph Rushford
+     * @param item the item being clicked in the menu
+     * @return which item is being clicked
+     */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
@@ -153,30 +166,26 @@ public class MainActivity extends AppCompatActivity {
 //
 //
 
-
+    /**
+     * @author Joseph Rushford
+     * used for the menu item delete account not currently functioning
+     */
     private void deleteAccount() {
 
     }
 
 
-    private void toggleTheme(boolean isChecked) {
-        SharedPreferences.Editor editor = getSharedPreferences("theme", MODE_PRIVATE).edit();
-
-        editor.putBoolean("theme", isChecked);
-        editor.apply();
-
-        Intent intent = getIntent();
-
-        finish();
-
-        startActivity(intent);
-    }
-
-
-
+    /**
+     * @author Joseph Rushford
+     * used for menu item to change password current in bottomnav instead
+     */
     private void changePassword() {
     }
 
+    /**
+     * @author Joseph Rushford
+     * helper method for menu item to log out user.
+     */
     private void signOut() {
         SharedPreferences prefs =
                 getSharedPreferences(
@@ -213,6 +222,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     /**
+     * @author Joseph Rushford
      * A BroadcastReceiver that listens for messages sent from PushReceiver
      */
     private class MainPushMessageReceiver extends BroadcastReceiver {

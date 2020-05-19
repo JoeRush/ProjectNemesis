@@ -35,13 +35,19 @@ public class SettingsFragment extends Fragment {
     }
 
 
-
+    /**
+     * @author Joseph Rushford
+     * process view to deletefragment where user can delete account
+     */
     private void processDelete() {
         Navigation.findNavController(getView()).
                 navigate(SettingsFragmentDirections.actionNavigationSettingsToDeleteFragment());
     }
 
-
+    /**
+     * @author Joseph Rushford
+     * process view to ChangeFragment to change password
+     */
     private void processChange() {
         Navigation.findNavController(getView()).
                 navigate(SettingsFragmentDirections.actionNavigationSettingsToChangeFragment());
