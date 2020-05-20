@@ -21,7 +21,7 @@
         android:label="@string/title_weather"
         tools:layout="@layout/fragment_weather" />
     <fragment
-        android:id="@+id/navigation_connections"
+        android:id="@+id/navigation_connections2"
         android:name="com.example.TCSS450GROUP1.ui.connections.ConnectionFragment"
         android:label="@string/title_connections"
         tools:layout="@layout/fragment_connection" />
@@ -59,4 +59,9 @@
         android:name="com.example.TCSS450GROUP1.ui.settings.theme.ThemeFragment"
         android:label="@string/title_change_theme"
         tools:layout="@layout/fragment_theme" />
+    <fragment
+        android:id="@+id/navigation_connections"
+        android:name="com.example.TCSS450GROUP1.ui.connections.ContactFragment"
+        android:label="@string/title_connections"
+        tools:layout="@layout/fragment_contact" />
 </navigation>

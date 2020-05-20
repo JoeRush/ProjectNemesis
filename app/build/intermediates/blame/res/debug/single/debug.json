@@ -44,10 +44,6 @@
         "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\menu\\bottom_nav_menu.xml"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_contacts.xml.flat",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\layout\\fragment_contacts.xml"
-    },
-    {
         "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_contacts_black_24dp.xml.flat",
         "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\drawable\\ic_contacts_black_24dp.xml"
     },
@@ -150,6 +146,10 @@
     {
         "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
         "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_contact.xml.flat",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\layout\\fragment_contact.xml"
     },
     {
         "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",

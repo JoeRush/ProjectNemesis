@@ -1518,7 +1518,6 @@ id actions
 id activity_chooser_view_content
 id add
 id add_cntbutton
-id add_contacts
 id add_email
 id add_name
 id add_page
@@ -1562,6 +1561,7 @@ id clip_horizontal
 id clip_vertical
 id collapseActionView
 id confirm_button
+id contact_names
 id container
 id content
 id contentPanel
@@ -1594,7 +1594,6 @@ id editPassword2
 id editText4
 id editText5
 id editUsername
-id edit_contacs
 id edit_email
 id edit_first
 id edit_last
@@ -1629,9 +1628,7 @@ id ghost_view
 id gone
 id group_divider
 id groups
-id guideline
 id guideline2
-id guideline3
 id guideline_fifty
 id hideable
 id home
@@ -1705,6 +1702,7 @@ id nav_host_fragment_container
 id nav_view
 id navigation_chat
 id navigation_connections
+id navigation_connections2
 id navigation_contacts
 id navigation_header_container
 id navigation_home
@@ -1738,7 +1736,7 @@ id progress_horizontal
 id radio
 id recycler_messages
 id registerFragment
-id remove_contacts
+id relativeLayout
 id requested_city_name
 id requested_zip_code
 id right
@@ -1772,7 +1770,6 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
-id show_contacts
 id skipCollapsed
 id slide
 id smallLabel
@@ -1937,7 +1934,7 @@ layout fragment_chat
 layout fragment_chat_message
 layout fragment_connection
 layout fragment_connection_view
-layout fragment_contacts
+layout fragment_contact
 layout fragment_delete
 layout fragment_forgot
 layout fragment_home

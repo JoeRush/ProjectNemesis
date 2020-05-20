@@ -17,6 +17,7 @@ import com.example.TCSS450GROUP1.model.UserInfoViewModel;
 
 
 /**
+ * @author Sharanjit
  * A simple {@link Fragment} subclass.
  * Use the {@link ConnectionFragment#newInstance} factory method to
  * create an instance of this fragment.

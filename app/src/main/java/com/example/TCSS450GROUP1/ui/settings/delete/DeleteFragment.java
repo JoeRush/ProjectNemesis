@@ -79,6 +79,7 @@ public class DeleteFragment extends Fragment {
             if (response.has("code")) {
                 try {
                     binding.editEmail.setError(
+
                             "Error Authenticating: " +
                                     response.getJSONObject("data").getString("message"));
                 } catch (JSONException e) {

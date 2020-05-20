@@ -1,10 +1,15 @@
 package com.example.TCSS450GROUP1.ui.connections;
 
+import androidx.annotation.Nullable;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.Serializable;
 
+/**
+ * @author Sharanjit
+ */
 public class ConnectionItem implements Serializable {
 
     private final String mUserName;
@@ -43,7 +48,14 @@ public class ConnectionItem implements Serializable {
     public String getUserName() {
         return mUserName;
     }
-
+    @Override
+    public boolean equals(@Nullable Object other) {
+        boolean result = false;
+        if(other instanceof ConnectionItem) {
+            result = mUserName == ((ConnectionItem) other).mUserName;
+        }
+        return result;
+    }
 }
 
 

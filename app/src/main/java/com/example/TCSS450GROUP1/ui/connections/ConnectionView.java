@@ -26,6 +26,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
+ * @author Sharanjit
  * A simple {@link Fragment} subclass.
  */
 public class ConnectionView extends AndroidViewModel {
