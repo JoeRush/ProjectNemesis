@@ -34,12 +34,12 @@
 19-->[androidx.core:core:1.1.0] C:\Users\jr-99\.gradle\caches\transforms-2\files-2.1\9f53cb53909029cecd1698edf8387a48\core-1.1.0\AndroidManifest.xml:24:18-86
 20        android:debuggable="true"
 21        android:extractNativeLibs="false"
-22        android:icon="@mipmap/ic_launcher"
-22-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:13:9-43
+22        android:icon="@drawable/raccoonrain"
+22-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:13:9-45
 23        android:label="@string/app_name"
 23-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:14:9-41
-24        android:roundIcon="@mipmap/ic_launcher_round"
-24-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:15:9-54
+24        android:roundIcon="@drawable/raccoonrain"
+24-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:15:9-50
 25        android:supportsRtl="true"
 25-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:16:9-35
 26        android:testOnly="true"

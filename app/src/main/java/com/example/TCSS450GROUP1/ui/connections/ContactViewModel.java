@@ -1,6 +1,7 @@
 package com.example.TCSS450GROUP1.ui.connections;
 
 import android.app.Application;
+import android.util.Base64;
 import android.util.Log;
 
 import androidx.annotation.NonNull;
@@ -19,6 +20,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.nio.charset.Charset;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Objects;
 
 /**
@@ -36,10 +39,10 @@ public class ContactViewModel extends AndroidViewModel {
                                       @NonNull Observer<? super JSONObject> observer){
         mContacts.observe(owner, observer);
     }
-    private void handleErrorMultiple(final VolleyError error) {
+
+    private void handleError(final VolleyError error) {
         if (Objects.isNull(error.networkResponse)) {
             try {
-
                 mContacts.setValue(new JSONObject("{" +
                         "error:\"" + error.getMessage() +
                         "\"}"));
@@ -48,37 +51,43 @@ public class ContactViewModel extends AndroidViewModel {
             }
         }
         else {
-            String data = new String(error.networkResponse.data, Charset.defaultCharset());
+            String data = new String(error.networkResponse.data, Charset.defaultCharset())
+                    .replace('\"', '\'');
             try {
                 mContacts.setValue(new JSONObject("{" +
                         "code:" + error.networkResponse.statusCode +
-                        ", data:" + data +
-                        "}"));
+                        ", data:\"" + data +
+                        "\"}"));
             } catch (JSONException e) {
                 Log.e("JSON PARSE", "JSON Parse Error in handleError");
             }
         }
     }
-    public void connect(final String email) {
+    public void connect(String email, final String jwt) {
 
-            Log.i("Made it:", "HERE ONE");
 
-            String urlCurrentDay = "http://team1-database.herokuapp.com/contacts";
+
+            String url = "https://team1-database.herokuapp.com/contacts/" + email;
             JSONObject body = new JSONObject();
-            try{
 
-                body.put("email" , "star@gmail");
 
-            } catch (JSONException e) {
-                e.printStackTrace();
-            }
+            Log.i("Made it:", body.toString());
             Request request = new JsonObjectRequest(
                     Request.Method.GET,
-                    urlCurrentDay,
+                    url,
                     body,
                     mContacts::setValue,
-                    this::handleErrorMultiple);
+                    this::handleError) {
+                @Override
+                public Map<String, String> getHeaders() {
+                    Map<String, String> headers = new HashMap<>();
+                    // add headers <key,value>
+                    headers.put("Authorization", jwt);
+                    return headers;
+                }
+            };
 
+            Log.i("Made it:", request.toString());
             request.setRetryPolicy(new DefaultRetryPolicy(
                     10_000,
                     DefaultRetryPolicy.DEFAULT_MAX_RETRIES,

@@ -16,7 +16,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3_API_24_for_3" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3_API_24_for_2" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -41,9 +41,9 @@
   </component>
   <component name="ProjectId" id="1bPjr9Tuppyd2A3Zy8ci0Ins1bk" />
   <component name="PropertiesComponent">
-    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_3_API_24_for_3" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-05-20T02:09:19.860Z" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Sharanjit" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_3_API_24_for_2" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-05-20T17:52:36.299Z" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Dependencies" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
