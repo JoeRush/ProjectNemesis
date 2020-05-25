@@ -1,5 +1,15 @@
 package com.example.TCSS450GROUP1.ui;
 
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.content.SharedPreferences;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.NavController;
@@ -8,25 +18,17 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import android.content.BroadcastReceiver;
-import android.content.Context;
-import android.content.Intent;
-import android.content.IntentFilter;
-import android.content.SharedPreferences;
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-
 import com.example.TCSS450GROUP1.R;
 import com.example.TCSS450GROUP1.databinding.ActivityMainBinding;
 import com.example.TCSS450GROUP1.model.NewMessageCountViewModel;
 import com.example.TCSS450GROUP1.model.PushyTokenViewModel;
 import com.example.TCSS450GROUP1.model.UserInfoViewModel;
+import com.example.TCSS450GROUP1.ui.chat.ChatMessage;
+import com.example.TCSS450GROUP1.ui.chat.ChatViewModel;
 import com.example.TCSS450GROUP1.ui.chat.PushReceiver;
 import com.google.android.material.badge.BadgeDrawable;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.example.TCSS450GROUP1.ui.chat.ChatMessage;
-import com.example.TCSS450GROUP1.ui.chat.ChatViewModel;
+
 /**
  * Activity where most fragments take place
  @author Joseph Rushford
@@ -37,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
     private NewMessageCountViewModel getmNewMessageModel;
     private ActivityMainBinding binding;
     private NewMessageCountViewModel mNewMessageModel;
-    private SharedPreferences.Editor sharedTheme;
     private SharedPreferences  mSharedTheme;
     private static final String THEME_KEY = "currentTheme";
     @Override
@@ -70,8 +71,8 @@ public class MainActivity extends AppCompatActivity {
         new ViewModelProvider(this, new UserInfoViewModel.UserInfoViewModelFactory(args.getEmail(), args.getJwt(), "temp" )).get(UserInfoViewModel.class);
 
         BottomNavigationView navView = findViewById(R.id.nav_view);
-
-        mAppBarConfiguration = new AppBarConfiguration.Builder(R.id.navigation_home,R.id.navigation_settings,
+        //R.id.navigation_settings,
+        mAppBarConfiguration = new AppBarConfiguration.Builder(R.id.navigation_home,
                 R.id.navigation_chat, R.id.navigation_connections, R.id.navigation_weather).build();
                 //R.id.navigation_weather).build();
 
@@ -133,12 +134,11 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_sign_out:
                 signOut();
                 break;
-            case R.id.action_change_password:
-                changePassword();
+            case R.id.action_settings:
+
+                goToSettings();
                 break;
-            case R.id.action_delete:
-                deleteAccount();
-                break;
+
             case R.id.action_defaultColor:
                 mSharedTheme.edit().putString(THEME_KEY, "default").apply();
                 //recreate();
@@ -146,6 +146,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 finish();
                 startActivity(intent);
+
               //  toggleTheme(false);
                 break;
             case R.id.action_PINK:
@@ -155,6 +156,7 @@ public class MainActivity extends AppCompatActivity {
                 intentPink.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 finish();
                 startActivity(intentPink);
+
               //  toggleTheme(true);
                 break;
             default:
@@ -168,19 +170,15 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * @author Joseph Rushford
-     * used for the menu item delete account not currently functioning
+     * used for the menu settings
      */
-    private void deleteAccount() {
-
+    private void goToSettings() {
+            Log.i("settings:" , "should go to settings");
+           Intent intent = new Intent(MainActivity.this, AccountActivity.class);
+            startActivity(intent);
     }
 
 
-    /**
-     * @author Joseph Rushford
-     * used for menu item to change password current in bottomnav instead
-     */
-    private void changePassword() {
-    }
 
     /**
      * @author Joseph Rushford

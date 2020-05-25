@@ -1490,12 +1490,10 @@ id action_bar_root
 id action_bar_spinner
 id action_bar_subtitle
 id action_bar_title
-id action_change_password
 id action_change_theme
 id action_container
 id action_context_bar
 id action_defaultColor
-id action_delete
 id action_divider
 id action_forgotFragment_to_loginFragment2
 id action_image
@@ -1507,10 +1505,14 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
+id action_navigation_connections2_to_contactsFragment
 id action_navigation_settings_to_changeFragment
 id action_navigation_settings_to_deleteFragment
 id action_navigation_settings_to_themeFragment
 id action_registerFragment_to_verifyFragment
+id action_settings
+id action_settingsFragment_to_changeFragment
+id action_settingsFragment_to_deleteFragment
 id action_sign_out
 id action_text
 id action_verifyFragment_to_loginFragment
@@ -1535,6 +1537,7 @@ id bottom
 id button
 id buttonPanel
 id button_forgot
+id button_full_post
 id button_register
 id button_send
 id button_sign_in
@@ -1561,7 +1564,14 @@ id clip_horizontal
 id clip_vertical
 id collapseActionView
 id confirm_button
+id connectionsSearchButton
+id connectionsSearchEditText
+id contact_first_name_text
+id contact_last_name_text
 id contact_names
+id contact_preview_text
+id contact_username_text
+id contactsFragment
 id container
 id content
 id contentPanel
@@ -1615,6 +1625,7 @@ id fill_horizontal
 id fill_vertical
 id filled
 id filter_chip
+id firstname_textView
 id fitToContents
 id five_day_title
 id fixed
@@ -1643,7 +1654,6 @@ id icon
 id icon_group
 id ifRoom
 id image
-id imageContact
 id image_logo
 id info
 id invisible
@@ -1651,12 +1661,14 @@ id italic
 id item_touch_helper_previous_elevation
 id labeled
 id largeLabel
+id lastname_textView
 id layoiut_root
 id layout_inner
 id layout_root
 id layout_wait
 id layout_weather
 id left
+id letter_textView
 id line1
 id line3
 id listMode
@@ -1667,6 +1679,8 @@ id mainActivity
 id main_graph
 id masked
 id media_actions
+id memberid_text
+id memberid_textView
 id message
 id middle
 id mini
@@ -1697,13 +1711,13 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id multiply
 id nav_controller_view_tag
+id nav_graph
 id nav_host_fragment
 id nav_host_fragment_container
 id nav_view
 id navigation_chat
 id navigation_connections
 id navigation_connections2
-id navigation_contacts
 id navigation_header_container
 id navigation_home
 id navigation_settings
@@ -1763,9 +1777,11 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id see_more_button
 id select_dialog_listview
 id selected
 id send_email_button
+id settingsFragment
 id shortcut
 id showCustom
 id showHome
@@ -1806,7 +1822,6 @@ id test_checkbox_android_button_tint
 id test_checkbox_app_button_tint
 id text
 id text2
-id textContactUsername
 id textEnd
 id textSpacerNoButtons
 id textSpacerNoTitle
@@ -1839,6 +1854,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id username_textView
 id verifyFragment
 id view_offset_helper
 id visible
@@ -1909,6 +1925,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_account
 layout activity_authentication
 layout activity_display_message
 layout activity_main
@@ -1933,8 +1950,10 @@ layout fragment_change
 layout fragment_chat
 layout fragment_chat_message
 layout fragment_connection
-layout fragment_connection_view
 layout fragment_contact
+layout fragment_contactlist_card
+layout fragment_contacts
+layout fragment_contacts_list
 layout fragment_delete
 layout fragment_forgot
 layout fragment_home
@@ -2008,6 +2027,7 @@ menu bottom_nav_menu
 menu drop_down
 mipmap ic_launcher
 mipmap ic_launcher_round
+navigation account_graph
 navigation auth_graph
 navigation main_graph
 plurals mtrl_badge_content_description
@@ -2018,6 +2038,7 @@ string Edit_Contacts
 string Five_Day_Title
 string Hourly_Title
 string Remove_Contacts
+string Search_Contacts
 string View_Contacts
 string Zip_Code
 string abc_action_bar_home_description
@@ -2060,6 +2081,7 @@ string action_sign_in_short
 string action_sign_out
 string action_signin
 string action_teal_theme
+string action_user_settings
 string app_name
 string appbar_scrolling_view_behavior
 string base_url
@@ -2104,6 +2126,7 @@ string hint_username_change
 string icon_content_description
 string keys_prefs_jwt
 string keys_shared_prefs
+string member_info
 string mtrl_badge_numberless_content_description
 string mtrl_chip_close_icon_content_description
 string mtrl_exceed_max_badge_number_suffix
@@ -2144,6 +2167,7 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string search_menu_title
+string see_more
 string status_bar_notification_info_overflow
 string switch_sign_in
 string switch_theme

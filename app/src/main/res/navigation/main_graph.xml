@@ -24,7 +24,11 @@
         android:id="@+id/navigation_connections2"
         android:name="com.example.TCSS450GROUP1.ui.connections.ConnectionFragment"
         android:label="@string/title_connections"
-        tools:layout="@layout/fragment_connection" />
+        tools:layout="@layout/fragment_connection" >
+        <action
+            android:id="@+id/action_navigation_connections2_to_contactsFragment"
+            app:destination="@id/contactsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/navigation_settings"
         android:name="com.example.TCSS450GROUP1.ui.settings.SettingsFragment"
@@ -40,10 +44,6 @@
             android:id="@+id/action_navigation_settings_to_themeFragment"
             app:destination="@id/themeFragment" />
     </fragment>
-    <activity
-        android:id="@+id/navigation_contacts"
-        android:name="com.example.TCSS450GROUP1.ui.connections.contacts.Contacts"
-        android:label="Contacts" />
     <fragment
         android:id="@+id/deleteFragment"
         android:name="com.example.TCSS450GROUP1.ui.settings.delete.DeleteFragment"
@@ -64,4 +64,12 @@
         android:name="com.example.TCSS450GROUP1.ui.connections.ContactFragment"
         android:label="@string/title_connections"
         tools:layout="@layout/fragment_contact" />
+    <fragment
+        android:id="@+id/contactsFragment"
+        android:name="com.example.TCSS450GROUP1.ui.connections.contacts.ContactsFragment"
+        android:label="ContactsFragment" >
+        <argument
+            android:name="contact"
+            app:argType="com.example.TCSS450GROUP1.ui.connections.contacts.Contacts" />
+    </fragment>
 </navigation>

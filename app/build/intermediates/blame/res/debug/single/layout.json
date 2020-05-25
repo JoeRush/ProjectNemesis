@@ -1,86 +1,94 @@
 [
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_change.xml",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\layout\\fragment_change.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_forgot.xml",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\src\\main\\res\\layout\\fragment_forgot.xml"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_register.xml",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\layout\\fragment_register.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\theme_switch.xml",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\src\\main\\res\\layout\\theme_switch.xml"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_chat.xml",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\layout\\fragment_chat.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_register.xml",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\src\\main\\res\\layout\\fragment_register.xml"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_theme.xml",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\layout\\fragment_theme.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_display_message.xml",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\src\\main\\res\\layout\\activity_display_message.xml"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_contact.xml",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\layout\\fragment_contact.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_contact.xml",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\src\\main\\res\\layout\\fragment_contact.xml"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_weather.xml",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\layout\\fragment_weather.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_contacts_list.xml",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\src\\main\\res\\layout\\fragment_contacts_list.xml"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_home.xml",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\layout\\fragment_home.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_verify.xml",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\src\\main\\res\\layout\\fragment_verify.xml"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_verify.xml",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\layout\\fragment_verify.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_theme.xml",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\src\\main\\res\\layout\\fragment_theme.xml"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_connection_view.xml",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\layout\\fragment_connection_view.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_login.xml",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\src\\main\\res\\layout\\fragment_login.xml"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_settings.xml",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\layout\\fragment_settings.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_contacts.xml",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\src\\main\\res\\layout\\fragment_contacts.xml"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_login.xml",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\layout\\fragment_login.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_chat.xml",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\src\\main\\res\\layout\\fragment_chat.xml"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_display_message.xml",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\layout\\activity_display_message.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_change.xml",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\src\\main\\res\\layout\\fragment_change.xml"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\src\\main\\res\\layout\\fragment_home.xml"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_authentication.xml",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\layout\\activity_authentication.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_account.xml",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\src\\main\\res\\layout\\activity_account.xml"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_connection.xml",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\layout\\fragment_connection.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_authentication.xml",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\src\\main\\res\\layout\\activity_authentication.xml"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_add_contacts.xml",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\layout\\fragment_add_contacts.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_settings.xml",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\src\\main\\res\\layout\\fragment_settings.xml"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_chat_message.xml",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\layout\\fragment_chat_message.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_delete.xml",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\src\\main\\res\\layout\\fragment_delete.xml"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_forgot.xml",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\layout\\fragment_forgot.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_connection.xml",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\src\\main\\res\\layout\\fragment_connection.xml"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\theme_switch.xml",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\layout\\theme_switch.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_add_contacts.xml",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\src\\main\\res\\layout\\fragment_add_contacts.xml"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_contacts.xml",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\layout\\fragment_contacts.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_chat_message.xml",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\src\\main\\res\\layout\\fragment_chat_message.xml"
     },
     {
-        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_delete.xml",
-        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\NickBranch\\app\\src\\main\\res\\layout\\fragment_delete.xml"
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_weather.xml",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\src\\main\\res\\layout\\fragment_weather.xml"
+    },
+    {
+        "merged": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_contactlist_card.xml",
+        "source": "C:\\Users\\jr-99\\AndroidStudioProjects\\sharanjit2\\app\\src\\main\\res\\layout\\fragment_contactlist_card.xml"
     }
 ]

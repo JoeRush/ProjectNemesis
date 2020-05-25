@@ -1,54 +1,48 @@
 package com.example.TCSS450GROUP1.ui.connections.contacts;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+import org.json.JSONObject;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
+import java.io.Serializable;
 
-import com.example.TCSS450GROUP1.R;
+public class Contacts implements Serializable {
 
-/**
- * A simple {@link Fragment} subclass.
- */
-public class Contacts extends AppCompatActivity {
 
-    private Button button;
+        private final String mUserName;
+        /**
 
-    public Contacts() {
-        // Required empty public constructor
+        /**
+         * Constructor that intantiates fields.
+         * @param userName
+         *
+         */
+        public Contacts(String userName) {
+
+
+            this.mUserName = userName;
+
+        }
+
+        /**
+         * Constructor that instantiates fields from a JSONObject.
+         */
+        public Contacts(JSONObject json) throws Exception {
+
+            mUserName = json.getString("username");
+
+        }
+
+
+        /**
+         * Returns username
+         * @return
+         */
+        public String getUserName() {
+            return mUserName;
+        }
+
+
+
+
     }
 
 
-//    @Override
-//    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-//                             Bundle savedInstanceState) {
-//        // Inflate the layout for this fragment
-//        return inflater.inflate(R.layout.fragment_contacts, container, false);
-//
-//
-//    }
-
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_contacts);
-        button = findViewById(R.id.add_contacts);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                AddContacts1();
-            }
-        });
-    }
-
-
-    public void AddContacts1(){
-        Intent intent = new Intent(this, AddContacts.class);
-        startActivity(intent);
-    }
-
-}

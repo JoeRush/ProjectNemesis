@@ -6,135 +6,138 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="24"
-8-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml
+8-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml
+9-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.WAKE_LOCK" />
-11-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:5:5-68
-11-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:5:22-65
+11-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:5:5-68
+11-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:5:22-65
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-12-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:6:5-79
-12-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:6:22-76
+12-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:6:5-79
+12-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:6:22-76
 13    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-13-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:7:5-81
-13-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:7:22-78
+13-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:7:5-81
+13-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:7:22-78
 14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-14-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:8:5-80
-14-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:8:22-78
+14-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:8:5-80
+14-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:8:22-78
 15    <uses-permission android:name="android.permission.INTERNET" />
-15-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:10:5-67
-15-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:10:22-64
+15-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:10:5-67
+15-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:10:22-64
 16
 17    <application
-17-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:11:5-67:19
+17-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:11:5-68:19
 18        android:allowBackup="true"
-18-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:12:9-35
+18-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:12:9-35
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 19-->[androidx.core:core:1.1.0] C:\Users\jr-99\.gradle\caches\transforms-2\files-2.1\9f53cb53909029cecd1698edf8387a48\core-1.1.0\AndroidManifest.xml:24:18-86
 20        android:debuggable="true"
 21        android:extractNativeLibs="false"
 22        android:icon="@drawable/raccoonrain"
-22-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:13:9-45
+22-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:13:9-45
 23        android:label="@string/app_name"
-23-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:14:9-41
+23-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:14:9-41
 24        android:roundIcon="@drawable/raccoonrain"
-24-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:15:9-50
+24-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:15:9-50
 25        android:supportsRtl="true"
-25-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:16:9-35
+25-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:16:9-35
 26        android:testOnly="true"
 27        android:theme="@style/AppTheme" >
-27-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:17:9-40
-28        <activity android:name="com.example.TCSS450GROUP1.ui.MainActivity" >
-28-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:18:9-20:20
-28-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:18:19-50
-29        </activity>
-30        <activity android:name="com.example.TCSS450GROUP1.ui.AuthenticationActivity" >
-30-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:21:9-27:20
-30-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:21:19-60
-31            <intent-filter>
-31-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:22:13-26:29
-32                <action android:name="android.intent.action.MAIN" />
-32-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:23:17-69
-32-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:23:25-66
-33
-34                <category android:name="android.intent.category.LAUNCHER" />
-34-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:25:17-77
-34-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:25:27-74
-35            </intent-filter>
-36        </activity>
-37
-38        <!-- Pushy Declarations -->
-39
+27-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:17:9-40
+28        <activity android:name="com.example.TCSS450GROUP1.ui.AccountActivity" />
+28-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:18:9-65
+28-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:18:19-53
+29        <activity android:name="com.example.TCSS450GROUP1.ui.MainActivity" >
+29-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:19:9-21:20
+29-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:19:19-50
+30        </activity>
+31        <activity android:name="com.example.TCSS450GROUP1.ui.AuthenticationActivity" >
+31-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:22:9-28:20
+31-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:22:19-60
+32            <intent-filter>
+32-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:23:13-27:29
+33                <action android:name="android.intent.action.MAIN" />
+33-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:24:17-69
+33-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:24:25-66
+34
+35                <category android:name="android.intent.category.LAUNCHER" />
+35-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:26:17-77
+35-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:26:27-74
+36            </intent-filter>
+37        </activity>
+38
+39        <!-- Pushy Declarations -->
 40
-41        <!-- Pushy Notification Receiver -->
-42        <!-- Incoming push notifications will invoke the following BroadcastReceiver -->
-43        <receiver
-43-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:33:9-38:20
-44            android:name="com.example.TCSS450GROUP1.ui.chat.PushReceiver"
-44-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:33:19-80
-45            android:exported="false" >
-45-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:33:81-105
-46            <intent-filter>
-46-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:34:13-37:29
-47
-48                <!-- Do not modify this -->
-49                <action android:name="pushy.me" />
-49-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:36:17-51
-49-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:36:25-48
-50            </intent-filter>
-51        </receiver>
-52
-53        <!-- Pushy Update Receiver -->
-54        <!-- Do not modify - internal BroadcastReceiver that restarts the listener service -->
-55        <receiver
-55-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:42:9-46:20
-56            android:name="me.pushy.sdk.receivers.PushyUpdateReceiver"
-56-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:42:19-76
-57            android:exported="false" >
-57-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:42:77-101
-58            <intent-filter>
-58-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:43:13-45:29
-59                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
-59-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:44:17-84
-59-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:44:25-81
-60            </intent-filter>
-61        </receiver>
-62
-63        <!-- Pushy Boot Receiver -->
-64        <!-- Do not modify - internal BroadcastReceiver that restarts the listener service -->
-65        <receiver
-65-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:50:9-54:20
-66            android:name="me.pushy.sdk.receivers.PushyBootReceiver"
-66-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:50:19-74
-67            android:exported="false" >
-67-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:50:75-99
-68            <intent-filter>
-68-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:51:13-53:29
-69                <action android:name="android.intent.action.BOOT_COMPLETED" />
-69-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:52:17-78
-69-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:52:25-76
-70            </intent-filter>
-71        </receiver>
-72
-73        <!-- Pushy Socket Service -->
-74        <!-- Do not modify - internal service -->
-75        <service android:name="me.pushy.sdk.services.PushySocketService" />
-75-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:58:9-75
-75-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:58:18-73
-76
-77        <!-- Pushy Job Service (added in Pushy SDK 1.0.35) -->
-78        <!-- Do not modify - internal service -->
-79        <service
-79-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:62:9-64:39
-80            android:name="me.pushy.sdk.services.PushyJobService"
-80-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:62:18-70
-81            android:exported="true"
-81-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:64:13-36
-82            android:permission="android.permission.BIND_JOB_SERVICE" />
-82-->C:\Users\jr-99\AndroidStudioProjects\NickBranch\app\src\main\AndroidManifest.xml:63:13-69
-83
-84        <!-- End Pushy Declarations -->
-85    </application>
-86
-87</manifest>
+41
+42        <!-- Pushy Notification Receiver -->
+43        <!-- Incoming push notifications will invoke the following BroadcastReceiver -->
+44        <receiver
+44-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:34:9-39:20
+45            android:name="com.example.TCSS450GROUP1.ui.chat.PushReceiver"
+45-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:34:19-80
+46            android:exported="false" >
+46-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:34:81-105
+47            <intent-filter>
+47-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:35:13-38:29
+48
+49                <!-- Do not modify this -->
+50                <action android:name="pushy.me" />
+50-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:37:17-51
+50-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:37:25-48
+51            </intent-filter>
+52        </receiver>
+53
+54        <!-- Pushy Update Receiver -->
+55        <!-- Do not modify - internal BroadcastReceiver that restarts the listener service -->
+56        <receiver
+56-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:43:9-47:20
+57            android:name="me.pushy.sdk.receivers.PushyUpdateReceiver"
+57-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:43:19-76
+58            android:exported="false" >
+58-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:43:77-101
+59            <intent-filter>
+59-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:44:13-46:29
+60                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+60-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:45:17-84
+60-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:45:25-81
+61            </intent-filter>
+62        </receiver>
+63
+64        <!-- Pushy Boot Receiver -->
+65        <!-- Do not modify - internal BroadcastReceiver that restarts the listener service -->
+66        <receiver
+66-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:51:9-55:20
+67            android:name="me.pushy.sdk.receivers.PushyBootReceiver"
+67-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:51:19-74
+68            android:exported="false" >
+68-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:51:75-99
+69            <intent-filter>
+69-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:52:13-54:29
+70                <action android:name="android.intent.action.BOOT_COMPLETED" />
+70-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:53:17-78
+70-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:53:25-76
+71            </intent-filter>
+72        </receiver>
+73
+74        <!-- Pushy Socket Service -->
+75        <!-- Do not modify - internal service -->
+76        <service android:name="me.pushy.sdk.services.PushySocketService" />
+76-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:59:9-75
+76-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:59:18-73
+77
+78        <!-- Pushy Job Service (added in Pushy SDK 1.0.35) -->
+79        <!-- Do not modify - internal service -->
+80        <service
+80-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:63:9-65:39
+81            android:name="me.pushy.sdk.services.PushyJobService"
+81-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:63:18-70
+82            android:exported="true"
+82-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:65:13-36
+83            android:permission="android.permission.BIND_JOB_SERVICE" />
+83-->C:\Users\jr-99\AndroidStudioProjects\sharanjit2\app\src\main\AndroidManifest.xml:64:13-69
+84
+85        <!-- End Pushy Declarations -->
+86    </application>
+87
+88</manifest>

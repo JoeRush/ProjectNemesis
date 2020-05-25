@@ -67,21 +67,21 @@ public class ContactFragment extends Fragment {
 
     private void listOfContacts() {
         ArrayList<String> contacts = new ArrayList<String>();
-        contacts.add("123metest");
-        contacts.add("12metest");
-        contacts.add("1metest");
-        contacts.add("1etest");
-        contacts.add("1et");
-        contacts.add("asdHHsddfg@");
-        contacts.add("abAcvf123!1@");
-        contacts.add("wasted");
-        contacts.add("testing");
-        contacts.add("fornick");
-        contacts.add("test1");
-        contacts.add("test2");
-        contacts.add("test3");
-        contacts.add("caron");
-        contacts.add("caronn2");
+//        contacts.add("123metest");
+//        contacts.add("12metest");
+//        contacts.add("1metest");
+//        contacts.add("1etest");
+//        contacts.add("1et");
+//        contacts.add("asdHHsddfg@");
+//        contacts.add("abAcvf123!1@");
+//        contacts.add("wasted");
+//        contacts.add("testing");
+//        contacts.add("fornick");
+//        contacts.add("test1");
+//        contacts.add("test2");
+//        contacts.add("test3");
+//        contacts.add("caron");
+//        contacts.add("caronn2");
         StringBuilder builder = new StringBuilder();
         for(int j = 0; j < contacts.size(); j++) {
             builder.append(contacts.get(j) + "\n\n");
