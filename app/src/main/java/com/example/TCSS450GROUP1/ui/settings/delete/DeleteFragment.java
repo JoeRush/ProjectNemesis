@@ -17,6 +17,7 @@ import android.view.ViewGroup;
 import com.example.TCSS450GROUP1.R;
 import com.example.TCSS450GROUP1.databinding.FragmentDeleteBinding;
 import com.example.TCSS450GROUP1.model.PushyTokenViewModel;
+import com.example.TCSS450GROUP1.model.SettingsViewModel;
 import com.example.TCSS450GROUP1.model.UserInfoViewModel;
 
 import org.json.JSONException;
@@ -28,7 +29,8 @@ import org.json.JSONObject;
 public class DeleteFragment extends Fragment {
     private FragmentDeleteBinding binding;
     private DeleteViewModel mDeleteModel;
-    private UserInfoViewModel mUserViewModel;
+    private SettingsViewModel mSettingsModel;
+
     public DeleteFragment() {
         // Required empty public constructor
     }
@@ -38,6 +40,7 @@ public class DeleteFragment extends Fragment {
         super.onCreate(savedInstanceState);
         mDeleteModel = new ViewModelProvider(getActivity())
                 .get(DeleteViewModel.class);
+        mSettingsModel = new ViewModelProvider((getActivity())).get(SettingsViewModel.class);
 
 
     }
@@ -65,8 +68,9 @@ public class DeleteFragment extends Fragment {
 
     private void attemptDelete(View view) {
         mDeleteModel.connect(
-                binding.editEmail.getText().toString(),
-                binding.editPassword1.getText().toString());
+                mSettingsModel.getEmail(),
+                binding.editPassword1.getText().toString()
+              );
     }
     /**
      * An observer on the HTTP Response from the web server. This observer should be
@@ -78,7 +82,7 @@ public class DeleteFragment extends Fragment {
         if (response.length() > 0) {
             if (response.has("code")) {
                 try {
-                    binding.editEmail.setError(
+                    binding.editPassword1.setError(
 
                             "Error Authenticating: " +
                                     response.getJSONObject("data").getString("message"));

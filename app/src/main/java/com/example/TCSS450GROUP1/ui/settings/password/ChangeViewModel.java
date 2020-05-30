@@ -1,6 +1,7 @@
 package com.example.TCSS450GROUP1.ui.settings.password;
 
 import android.app.Application;
+import android.util.Base64;
 import android.util.Log;
 
 import androidx.annotation.NonNull;
@@ -19,6 +20,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.nio.charset.Charset;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Objects;
 
 /**
@@ -68,20 +71,21 @@ public class ChangeViewModel extends AndroidViewModel {
     /**
      * @author Joseph Rushford
      * database connection to account endpoint to change a persons password
-     * @param username the username the person is entering
+     * @param email the username the person is entering
      * @param oldPassword the old password they are changing
      * @param newPassword the new password they are changing
      */
     public void connect(
-                        final String username,
+                        final String email,
                         final String oldPassword,
-                        final String newPassword
+                        final String newPassword,
+                        final String jwt
                         ) {
         String url ="http://team1-database.herokuapp.com/account/change";
         JSONObject body = new JSONObject();
         try{
 
-            body.put( "username" , username);
+            body.put( "email" , email);
             body.put("oldpassword", oldPassword);
             body.put( "newpassword", newPassword);
         } catch (JSONException e) {
@@ -92,7 +96,15 @@ public class ChangeViewModel extends AndroidViewModel {
                 url,
                 body,
                 mResponse::setValue,
-                this::handleError);
+                this::handleError){
+            @Override
+            public Map<String, String> getHeaders() {
+                Map<String, String> headers = new HashMap<>();
+                // add headers <key,value>
+                headers.put("Authorization", jwt);
+                return headers;
+            }
+        };
         request.setRetryPolicy(new DefaultRetryPolicy(
                 10_000,
                 DefaultRetryPolicy.DEFAULT_MAX_RETRIES,

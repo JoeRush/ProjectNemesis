@@ -18,6 +18,8 @@ import android.view.ViewGroup;
 import com.example.TCSS450GROUP1.R;
 import com.example.TCSS450GROUP1.databinding.FragmentChangeBinding;
 import com.example.TCSS450GROUP1.databinding.FragmentDeleteBinding;
+import com.example.TCSS450GROUP1.model.SettingsViewModel;
+import com.example.TCSS450GROUP1.model.UserInfoViewModel;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -28,6 +30,7 @@ import org.json.JSONObject;
 public class ChangeFragment extends Fragment {
     private FragmentChangeBinding binding;
     private ChangeViewModel mChangeModel;
+    private SettingsViewModel mSettingsModel;
     public ChangeFragment() {
         // Required empty public constructor
     }
@@ -36,6 +39,7 @@ public class ChangeFragment extends Fragment {
         super.onCreate(savedInstanceState);
         mChangeModel = new ViewModelProvider(getActivity())
                 .get(ChangeViewModel.class);
+        mSettingsModel = new ViewModelProvider((getActivity())).get(SettingsViewModel.class);
     }
 
     @Override
@@ -49,15 +53,17 @@ public class ChangeFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         binding.buttonUpdate.setOnClickListener(this::attemptUpdate);
+//        Log.d("checking", mUserModel.getEmail());
         mChangeModel.addResponseObserver(getViewLifecycleOwner(),
                 this::observeResponse);
     }
 
     private void attemptUpdate(View view) {
         mChangeModel.connect(
-                binding.editUsername.getText().toString(),
+                mSettingsModel.getEmail(),
                 binding.editPassword1.getText().toString(),
-                binding.editPassword2.getText().toString()
+                binding.editPassword2.getText().toString(),
+                mSettingsModel.getJWT()
         );
     }
 
@@ -71,7 +77,7 @@ public class ChangeFragment extends Fragment {
         if (response.length() > 0) {
             if (response.has("code")) {
                 try {
-                    binding.editUsername.setError(
+                    binding.editPassword1.setError(
                             "Error Authenticating: " +
                                     response.getJSONObject("data").getString("message"));
                 } catch (JSONException e) {
