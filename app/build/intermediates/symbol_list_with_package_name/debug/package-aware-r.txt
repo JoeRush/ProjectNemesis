@@ -1598,6 +1598,7 @@ id button_add_contactlist
 id button_delete_contact
 id button_delete_contactlist
 id button_forgot
+id button_full_post
 id button_register
 id button_send
 id button_sign_in
@@ -1627,6 +1628,10 @@ id clip_horizontal
 id clip_vertical
 id collapseActionView
 id confirm_button
+id connectionsSearchButton
+id connectionsSearchEditText
+id contact_first_name_text
+id contact_last_name_text
 id contact_names
 id contactlistTextView
 id contactlist_card_root
@@ -1683,6 +1688,7 @@ id fill_horizontal
 id fill_vertical
 id filled
 id filter_chip
+id firstname_textView
 id fitToContents
 id five_day_title
 id fixed
@@ -1731,6 +1737,7 @@ id italic
 id item_touch_helper_previous_elevation
 id labeled
 id largeLabel
+id lastname_textView
 id layoiut_root
 id layout_inner
 id layout_inner_contact
@@ -1748,6 +1755,8 @@ id main_graph
 id map
 id masked
 id media_actions
+id memberid_text
+id memberid_textView
 id message
 id middle
 id mini
@@ -1844,6 +1853,7 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id see_more_button
 id select_dialog_listview
 id selected
 id send_email_button
@@ -1923,6 +1933,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id username_textView
 id verifyFragment
 id view_offset_helper
 id visible
