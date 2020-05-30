@@ -33,7 +33,7 @@ import java.util.Arrays;
 public class ContactFragment extends Fragment {
     private UserInfoViewModel mUserModel;
     private ContactViewModel mContactViewModel;
-    private String[] mContacts;
+    private ArrayList<String> mContacts;
     private FragmentContactBinding binding;
     public ContactFragment() {
         // Required empty public constructor
@@ -43,6 +43,7 @@ public class ContactFragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        mContacts = new ArrayList<>();
         ViewModelProvider provider= new ViewModelProvider(getActivity());
         mContactViewModel = provider.get(ContactViewModel.class);
         mUserModel = provider.get(UserInfoViewModel.class);
@@ -59,35 +60,19 @@ public class ContactFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         mContactViewModel.connect(mUserModel.getEmail(), mUserModel.getJWT());
-        //listOfContacts();
         mContactViewModel.addResponseObserver(getViewLifecycleOwner(),
                 this::observeContacts);
+        binding.buttonAddContact.setOnClickListener(this::attemptToAdd);
+        binding.buttonDeleteContact.setOnClickListener(this::attemptToDelete);
 
     }
 
-    private void listOfContacts() {
-        ArrayList<String> contacts = new ArrayList<String>();
-        contacts.add("123metest");
-        contacts.add("12metest");
-        contacts.add("1metest");
-        contacts.add("1etest");
-        contacts.add("1et");
-        contacts.add("asdHHsddfg@");
-        contacts.add("abAcvf123!1@");
-        contacts.add("wasted");
-        contacts.add("testing");
-        contacts.add("fornick");
-        contacts.add("test1");
-        contacts.add("test2");
-        contacts.add("test3");
-        contacts.add("caron");
-        contacts.add("caronn2");
-        StringBuilder builder = new StringBuilder();
-        for(int j = 0; j < contacts.size(); j++) {
-            builder.append(contacts.get(j) + "\n\n");
-        }
-        binding.contactNames.setText(builder.toString());
+    private void attemptToAdd(View view) {
     }
+
+    private void attemptToDelete(View view) {
+    }
+
 
     private void observeContacts(JSONObject response) {
         Log.i("user", response.toString());
@@ -125,8 +110,10 @@ public class ContactFragment extends Fragment {
             JSONObject user = (new JSONObject(jsonUsers.getString(i)));
             contacts.add(user.getString("username"));
         }
+
         StringBuilder builder = new StringBuilder();
         for(int j = 0; j < contacts.size(); j++) {
+            mContacts.add(contacts.get(j));
             builder.append(contacts.get(j) + "\n\n");
         }
         Log.i("contacts", builder.toString());

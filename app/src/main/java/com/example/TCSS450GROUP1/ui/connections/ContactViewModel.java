@@ -98,4 +98,74 @@ public class ContactViewModel extends AndroidViewModel {
 
 
     }
+    public void connectAddContact(String email, String otherEmail, final String jwt) {
+
+
+
+        String url = "https://team1-database.herokuapp.com/contacts/" + email;
+        JSONObject body = new JSONObject();
+
+
+        Log.i("Made it:", body.toString());
+        Request request = new JsonObjectRequest(
+                Request.Method.PUT,
+                url,
+                body,
+                mContacts::setValue,
+                this::handleError) {
+            @Override
+            public Map<String, String> getHeaders() {
+                Map<String, String> headers = new HashMap<>();
+                // add headers <key,value>
+                headers.put("Authorization", jwt);
+                return headers;
+            }
+        };
+
+        Log.i("Made it:", request.toString());
+        request.setRetryPolicy(new DefaultRetryPolicy(
+                10_000,
+                DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
+                DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+        //Instantiate the RequestQueue and add the request to the queue
+        RequestQueueSingleton.getInstance(getApplication().getApplicationContext())
+                .addToRequestQueue(request);
+
+
+    }
+    public void connectRemoveContact(String email, String otherEmail, final String jwt) {
+
+
+
+        String url = "https://team1-database.herokuapp.com/contacts/" + email;
+        JSONObject body = new JSONObject();
+
+
+        Log.i("Made it:", body.toString());
+        Request request = new JsonObjectRequest(
+                Request.Method.DELETE,
+                url,
+                body,
+                mContacts::setValue,
+                this::handleError) {
+            @Override
+            public Map<String, String> getHeaders() {
+                Map<String, String> headers = new HashMap<>();
+                // add headers <key,value>
+                headers.put("Authorization", jwt);
+                return headers;
+            }
+        };
+
+        Log.i("Made it:", request.toString());
+        request.setRetryPolicy(new DefaultRetryPolicy(
+                10_000,
+                DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
+                DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+        //Instantiate the RequestQueue and add the request to the queue
+        RequestQueueSingleton.getInstance(getApplication().getApplicationContext())
+                .addToRequestQueue(request);
+
+
+    }
 }

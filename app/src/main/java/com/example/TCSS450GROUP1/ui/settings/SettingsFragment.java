@@ -41,7 +41,7 @@ public class SettingsFragment extends Fragment {
      */
     private void processDelete() {
         Navigation.findNavController(getView()).
-                navigate(SettingsFragmentDirections.actionNavigationSettingsToDeleteFragment());
+                navigate(SettingsFragmentDirections.actionSettingsFragmentToDeleteFragment());
     }
 
     /**
@@ -50,6 +50,6 @@ public class SettingsFragment extends Fragment {
      */
     private void processChange() {
         Navigation.findNavController(getView()).
-                navigate(SettingsFragmentDirections.actionNavigationSettingsToChangeFragment());
+                navigate(SettingsFragmentDirections.actionSettingsFragmentToChangeFragment());
     }
 }

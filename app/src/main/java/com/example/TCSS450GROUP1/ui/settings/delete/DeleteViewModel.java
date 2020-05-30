@@ -79,10 +79,11 @@ public class DeleteViewModel extends AndroidViewModel {
     /**
      * @author Joseph Rushford
      * database connection to delete account
+
      * @param email the email of the account being deleted
      * @param password the password of the account being deleted
      */
-    public void connect(final String email, final String password) {
+    public void connect(String email, final String password) {
         String url = "http://team1-database.herokuapp.com/account";
         Request request = new JsonObjectRequest(
                 Request.Method.DELETE,

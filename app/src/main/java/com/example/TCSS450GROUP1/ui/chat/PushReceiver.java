@@ -84,10 +84,16 @@ public class PushReceiver extends BroadcastReceiver {
                     .setContentText(message.getMessage())
                     .setPriority(NotificationCompat.PRIORITY_DEFAULT)
                     .setContentIntent(pendingIntent);
-
+            NotificationCompat.Builder builder2 = new NotificationCompat.Builder(context, CHANNEL_ID)
+                    .setAutoCancel(true)
+                    .setSmallIcon(R.drawable.ic_chat_notification)
+                    .setContentTitle("Message from: " + message.getSender())
+                    .setContentText(message.getMessage())
+                    .setPriority(NotificationCompat.FLAG_FOREGROUND_SERVICE)
+                    .setContentIntent(pendingIntent);
             // Automatically configure a ChatMessageNotification Channel for devices running Android O+
             Pushy.setNotificationChannel(builder, context);
-
+            Pushy.setNotificationChannel(builder2, context);
             // Get an instance of the NotificationManager service
             NotificationManager notificationManager =
                     (NotificationManager) context.getSystemService(context.NOTIFICATION_SERVICE);
