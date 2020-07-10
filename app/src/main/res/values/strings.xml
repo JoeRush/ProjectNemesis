@@ -3,7 +3,7 @@
     <string name="conversation_send_button">Send</string>
     <string name="welcome_message">Welcome</string>
     <string name="title_activity_maps">Map</string>
-    <string name="app_name">Team 1</string>
+    <string name="app_name">Nemesis</string>
     <string name="switch_sign_in">Stay Signed in</string>
     <string name="keys_shared_prefs">My Weather Shared Prefs</string>
     <string name="keys_prefs_jwt">Sharded Prefs JWT</string>
@@ -80,12 +80,29 @@
     <string name="switch_theme">Switch Theme</string>
     <string name="City_Name">City Name</string>
     <string name="Zip_Code">Zip Code</string>
+    <string name="Zip_Code_Tag">Search with a zip code…</string>
+    <string name="Google_Map_Search">Select a location via Google Maps…</string>
     <string name="Five_Day_Title">5-Day Forecast</string>
     <string name="Hourly_Title">Hourly Forecast</string>
+    <string name="Search">Search</string>
 
     <string name="Search_Contacts">Search Contacts</string>
     <string name="see_more">See More</string>
     <string name="member_info">Member Info.</string>
     <string name="button_delete_contact">Delete Contact</string>
     <string name="button_add_contact">Add Contact</string>
+    <string name="title_activity_map">Map</string>
+    <string name="Temperature_Value_Home">Current Temperature</string>
+
+    <string name="hint_add_contact">Enter new contact\'s email</string>
+    <string name="title_delete_contact">Delete Contact</string>
+    <string name="title_add_contact">Add Contact</string>
+    <string name="button_add_chat">Add Chat</string>
+    <string name="hint_add_chat">Enter new chat members\'s email</string>
+    <string name="hint_add_chatname">Enter new name for this chat</string>
+    <string name="button_add_to_chat">Add New Member To Chat</string>
+    <string name="title_add_chat">Add Chat</string>
+    <string name="title_add_user_to_chat">Add User to Chat</string>
+    <string name="title_chat_list">ChatList</string>
+    <string name="button_chat_contact">Create New Chat</string>
 </resources>

@@ -133,11 +133,11 @@ public class RegisterFragment extends Fragment {
         }
     }
     private void navigateToVerify(final String email, final String password) {
-        binding.buttonRegister.setOnClickListener(button ->
+
                 Navigation.findNavController(getView()).navigate(
                         RegisterFragmentDirections
                                 .actionRegisterFragmentToVerifyFragment(binding.editEmail.getText().toString(),
-                                        binding.editPassword1.getText().toString())));
+                                        binding.editPassword1.getText().toString()));
     }
 
 

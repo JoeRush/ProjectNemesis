@@ -38,7 +38,7 @@ import javax.net.ssl.HttpsURLConnection;
 /**
  * @author Matthew Molina
  */
-public class WeatherViewModel extends AndroidViewModel {
+public class    WeatherViewModel extends AndroidViewModel {
 
     private MutableLiveData<JSONObject> mResponseCurrent;
     private MutableLiveData<JSONObject> mResponseFiveDay;
@@ -139,7 +139,7 @@ public class WeatherViewModel extends AndroidViewModel {
         try {
             Log.i("Made it:", "HERE TWO");
 
-            String urlFiveDay = "http://team1-database.herokuapp.com/weather/forecast";
+            String urlFiveDay = "https://team1-database.herokuapp.com/weather/forecast";
 
             Request request = new JsonObjectRequest(
                     Request.Method.GET,

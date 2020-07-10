@@ -1,7 +1,6 @@
 package com.example.TCSS450GROUP1.ui.connections;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,14 +9,10 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.Navigation;
 
-import com.example.TCSS450GROUP1.databinding.FragmentContactBinding;
 import com.example.TCSS450GROUP1.databinding.FragmentContactsListBinding;
 import com.example.TCSS450GROUP1.model.UserInfoViewModel;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.util.ArrayList;
 
@@ -60,16 +55,18 @@ public class ContactsListFragment extends Fragment {
                         binding.contactlistCardRoot.setAdapter(new ContactListRecyclerViewAdapter(contactsList));
                    }
                });
-       // binding.buttonAddContactlist.setOnClickListener(this::attemptToAdd);
-        //binding.buttonDeleteContactlist.setOnClickListener(this::attemptToDelete);
+        binding.buttonAddContactlist.setOnClickListener(this::attemptToAdd);
 
     }
 
+    /**
+     * private helper method to navigate to attempt to add
+     * @param view the current view
+     */
     private void attemptToAdd(View view) {
+        Navigation.findNavController(view).navigate(ContactsListFragmentDirections.actionNavigationConnectionsToAddContact());
     }
 
-    private void attemptToDelete(View view) {
-    }
 
 }
 

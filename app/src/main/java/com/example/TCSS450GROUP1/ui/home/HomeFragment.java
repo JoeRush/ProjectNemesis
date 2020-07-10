@@ -2,43 +2,37 @@ package com.example.TCSS450GROUP1.ui.home;
 
 import android.location.Location;
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProvider;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.TCSS450GROUP1.R;
-import com.example.TCSS450GROUP1.databinding.FragmentHomeBinding;
-import com.example.TCSS450GROUP1.databinding.FragmentWeatherBinding;
-import com.example.TCSS450GROUP1.model.NewMessageCountViewModel;
-import com.example.TCSS450GROUP1.model.UserInfoViewModel;
-import com.example.TCSS450GROUP1.ui.chat.ChatMessage;
-import com.example.TCSS450GROUP1.ui.chat.ChatViewModel;
-import com.google.android.gms.maps.GoogleMap;
-import com.google.android.material.badge.BadgeDrawable;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
 
-import org.json.JSONArray;
+import com.example.TCSS450GROUP1.databinding.FragmentHomeBinding;
+import com.example.TCSS450GROUP1.model.UserInfoViewModel;
+import com.example.TCSS450GROUP1.ui.chat.ChatViewModel;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.ArrayList;
-
-
+/**
+ * @author Joseph Rushford
+ */
 public class HomeFragment extends Fragment {
     FragmentHomeBinding binding;
-    private NewMessageCountViewModel mNewMessageModel;
+
     private static final int HARD_CODED_CHAT_ID = 1;
     private ChatViewModel mChatModel;
     private UserInfoViewModel mUserModel;
     private HomeViewModel mModel;
-    private HomeRecentViewModel mRecentModel;
+
+    private CurrentWeatherViewModel mCurrentModel;
+    private Double latD;
+    private Double longD;
     public HomeFragment() {
         // Required empty public constructor
     }
@@ -51,10 +45,11 @@ public class HomeFragment extends Fragment {
         super.onCreate(savedInstanceState);
         ViewModelProvider provider= new ViewModelProvider(getActivity());
         mUserModel = provider.get(UserInfoViewModel.class);
-        mNewMessageModel = provider.get(NewMessageCountViewModel.class);
         mModel = provider.get(HomeViewModel.class);
-        mRecentModel = provider.get(HomeRecentViewModel.class);
-        mRecentModel.setEmail(mUserModel.getEmail());
+
+
+        mCurrentModel = provider.get(CurrentWeatherViewModel.class);
+
     }
 
     @Override
@@ -70,45 +65,29 @@ public class HomeFragment extends Fragment {
         FragmentHomeBinding binding = FragmentHomeBinding.bind(getView());
 
         binding.textEmailHome.setText(mUserModel.getEmail());
-
-        mModel.connect("temp", "temp", mUserModel.getJWT());
-        mModel.addResponseObserver(getViewLifecycleOwner(), this::observeCurrentWeather);
+       // mCurrentModel.connect(mUserModel.getJWT(), lat, longD);
         mModel.addLocationObserver(getViewLifecycleOwner(), this::observeCurrentLocation);
 
-//        binding.recentChatHome.setText(mModel.getRecentChat().getMessage());
-//        mNewMessageModel.addMessageCountObserver(this, count -> {
-//        mRecentModel.addChatObserver(getViewLifecycleOwner(), message-> {
-//            binding.recentChatHome.setText(message.getMessage());
-//        });
-//        mChatModel.addMessageObserver(HARD_CODED_CHAT_ID, getViewLifecycleOwner(),
-//                list -> {
-//                    binding.recentChatHome.setText(list.get(list.size()-1).getMessage());
-//                });
-        //    binding.recentChatHome.setText("Number of unread messages are: ");
-                    //+ mRecentModel.getRecentChat().getMessage());
-//        });
 
-        //mModel.addChatObserver(getViewLifecycleOwner(),
-              //  this::observeRecentChat);
 
     }
 
     private void observeCurrentLocation(Location location) {
-        String latitude = String.valueOf(mModel.getCurrentLocation().getLatitude());
-        String longitude = String.valueOf(mModel.getCurrentLocation().getLongitude());
-        binding.weatherHome.setText(latitude);
-        binding.weatherTypeHome.setText(longitude);
+        Double latitude = mModel.getCurrentLocation().getLatitude();
+        Double longitude = mModel.getCurrentLocation().getLongitude();
+        mCurrentModel.connect(mUserModel.getJWT(), latitude, longitude );
+        mCurrentModel.addResponseObserver(getViewLifecycleOwner(), this::observeCurrentWeather);
+     //   binding.weatherHome.setText(latitude);
+      //  binding.weatherTypeHome.setText(longitude);
     }
 
     private void observeCurrentWeather(JSONObject response) {
-//        String latitude = String.valueOf(location.getLatitude());
-//        String longitude = String.valueOf(location.getLongitude());
-//        binding.weatherHome.setText(latitude);
-//        binding.weatherTypeHome.setText(longitude);
+        Log.i("length response" , response.toString());
+        Log.i("length response" , String.valueOf(response.length()));
         if (response.length() > 0) {
             if (response.has("code")) {
                 try {
-                    binding.weatherHome.setError(
+                    binding.homeCity.setError(
                             "Error Authenticating: " +
                                     response.getJSONObject("data").getString("message"));
                 } catch (JSONException e) {
@@ -129,18 +108,19 @@ public class HomeFragment extends Fragment {
     }
 
     private void getCurrentWeather(JSONObject response) throws JSONException {
-//        ArrayList<Integer> temps = new ArrayList<Integer>();
-//        ArrayList<String> descriptions = new ArrayList<String>();
-//        JSONObject jsonMessage = new JSONObject(response.getString("hourly"));
-////        Log.i("DAILY", jsonMessage.getString("daily"));
-//        JSONArray jsonDaily = jsonMessage.getJSONArray("temp");
-//        for(int i = 0; i < 5; i++) {
-//            JSONObject jsonDay = new JSONObject(jsonDaily.getString(i));
-//            JSONObject jsonTemp = new JSONObject(jsonDay.getString("temp"));
-//            Float kelvin = Float.parseFloat(jsonTemp.getString("day"));
-//            int temperature = (int)kelvinToFar(kelvin);
-//            temps.add(temperature);
-//        }
+
+       // JSONObject jsonMessage = new JSONObject(response.getString("current"));
+        String current = response.getString("current");
+        String[] splits = current.split("dt: |temp: |Weather:");
+
+            Log.i("current", splits[0]);
+
+        Log.i("current", response.getString("current"));
+        binding.weatherHome.setText(splits[3]);
+        Float kev = Float.valueOf(splits[2]);
+        String temp = String.valueOf(kelvinToFar(kev));
+         binding.currentTemperatureHome.setText(temp);
+
     }
 
 

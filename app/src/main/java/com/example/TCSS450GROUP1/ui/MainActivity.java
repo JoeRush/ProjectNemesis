@@ -16,6 +16,7 @@ import android.view.MenuItem;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.NavArgument;
 import androidx.navigation.NavController;
 import androidx.navigation.NavDestination;
 import androidx.navigation.Navigation;
@@ -31,6 +32,7 @@ import com.example.TCSS450GROUP1.ui.chat.ChatMessage;
 import com.example.TCSS450GROUP1.ui.chat.ChatViewModel;
 import com.example.TCSS450GROUP1.ui.chat.PushReceiver;
 import com.example.TCSS450GROUP1.ui.home.HomeViewModel;
+import com.example.TCSS450GROUP1.ui.weather.LocationViewModel;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationCallback;
 import com.google.android.gms.location.LocationRequest;
@@ -63,7 +65,10 @@ public class MainActivity extends AppCompatActivity {
     // Will use this call back to decide what to do when a location change is detected
     private LocationCallback mLocationCallback;
     //The ViewModel that will store the current location
-    private HomeViewModel mLocationModel;
+
+//    private HomeViewModel mLocationModel;
+    private HomeViewModel mHomeViewModel;
+    private LocationViewModel mLocationModel;
     private AppBarConfiguration mAppBarConfiguration;
     private MainPushMessageReceiver mPushMessageReceiver;
     private NewMessageCountViewModel getmNewMessageModel;
@@ -155,15 +160,23 @@ public class MainActivity extends AppCompatActivity {
                     // ...
                     Log.d("LOCATION UPDATE!", location.toString());
                     if (mLocationModel == null) {
+
                         mLocationModel = new ViewModelProvider(MainActivity.this)
+                                .get(LocationViewModel.class);
+                    }
+                    if(mHomeViewModel == null) {
+                        mHomeViewModel = new ViewModelProvider(MainActivity.this)
                                 .get(HomeViewModel.class);
                     }
+                    mHomeViewModel.setLocation(location);
                     mLocationModel.setLocation(location);
                 }
             };
         };
 
         createLocationRequest();
+        startLocationUpdates();
+        stopLocationUpdates();
         Log.d("made it here", "location call finished");
 
     }
@@ -227,9 +240,21 @@ public class MainActivity extends AppCompatActivity {
                             if (location != null) {
                                 Log.d("LOCATION", location.toString());
                                 if (mLocationModel == null) {
+
+
+
+
                                     mLocationModel = new ViewModelProvider(MainActivity.this)
+                                            .get(LocationViewModel.class);
+                                }
+                                if(mHomeViewModel == null) {
+                                    mHomeViewModel = new ViewModelProvider(MainActivity.this)
                                             .get(HomeViewModel.class);
                                 }
+                                mHomeViewModel.setLocation(location);
+
+
+
                                 mLocationModel.setLocation(location);
 
                             }
@@ -275,21 +300,21 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.action_defaultColor:
                 mSharedTheme.edit().putString(THEME_KEY, "default").apply();
-                //recreate();
-                Intent intent= getIntent();
-                intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-                finish();
-                startActivity(intent);
+                recreate();
+//                Intent intent= getIntent();
+//                intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+//                finish();
+//                startActivity(intent);
 
               //  toggleTheme(false);
                 break;
             case R.id.action_PINK:
                 mSharedTheme.edit().putString(THEME_KEY, "pink").apply();
-                //recreate();
-                Intent intentPink = getIntent();
-                intentPink.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-                finish();
-                startActivity(intentPink);
+                recreate();
+               // Intent intentPink = getIntent();
+                //intentPink.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                //finish();
+                //startActivity(intentPink);
 
               //  toggleTheme(true);
                 break;
@@ -358,7 +383,7 @@ public class MainActivity extends AppCompatActivity {
         if (mPushMessageReceiver != null){
             unregisterReceiver(mPushMessageReceiver);
         }
-        //stopLocationUpdates();
+        //topLocationUpdates();
 
     }
     /**

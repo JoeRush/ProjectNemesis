@@ -16,14 +16,13 @@ import com.example.TCSS450GROUP1.databinding.FragmentChatBinding;
 import com.example.TCSS450GROUP1.model.UserInfoViewModel;
 
 
-
 /**
  * @author Jaskaran Mangat
  */
 public class ChatFragment extends Fragment {
 
     //The chat ID for "global" chat
-    private static final int HARD_CODED_CHAT_ID = 1;
+    private int HARD_CODED_CHAT_ID;
     private ChatSendViewModel mSendModel;
     private ChatViewModel mChatModel;
     private UserInfoViewModel mUserModel;
@@ -36,6 +35,7 @@ public class ChatFragment extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ViewModelProvider provider = new ViewModelProvider(getActivity());
+        HARD_CODED_CHAT_ID = ChatFragmentArgs.fromBundle(getArguments()).getChatID();
         mUserModel = provider.get(UserInfoViewModel.class);
         mSendModel = provider.get(ChatSendViewModel.class);
         mChatModel = provider.get(ChatViewModel.class);

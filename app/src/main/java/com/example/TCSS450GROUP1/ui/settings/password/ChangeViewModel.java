@@ -81,7 +81,7 @@ public class ChangeViewModel extends AndroidViewModel {
                         final String newPassword,
                         final String jwt
                         ) {
-        String url ="http://team1-database.herokuapp.com/account/change";
+        String url ="https://team1-database.herokuapp.com/account/change";
         JSONObject body = new JSONObject();
         try{
 

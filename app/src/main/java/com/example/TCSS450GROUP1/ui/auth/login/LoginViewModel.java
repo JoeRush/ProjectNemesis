@@ -75,7 +75,7 @@ public class LoginViewModel extends AndroidViewModel {
         }
     }
     public void connect(final String email, final String password) {
-        String url = "http://team1-database.herokuapp.com/auth";
+        String url = "https://team1-database.herokuapp.com/auth";
         Request request = new JsonObjectRequest(
                 Request.Method.GET,
                 url,

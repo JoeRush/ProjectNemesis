@@ -11,12 +11,14 @@ public class ChatRoom implements Serializable {
 
     private final String email;
     private final int rowCount;
+    private final int chatId;
 
 
-    public ChatRoom(JSONObject json, int count) throws Exception {
+    public ChatRoom(JSONObject json, int count, int chatId) throws Exception {
 
         rowCount = count;
-        email = json.getString("email");
+        email = json.getString("name");
+        this.chatId = json.getInt("chatid");
     }
 
     /**
@@ -34,6 +36,8 @@ public class ChatRoom implements Serializable {
     public String getEmail() {
         return email;
     }
+
+    public int getChatId() { return chatId;}
 
 }
 

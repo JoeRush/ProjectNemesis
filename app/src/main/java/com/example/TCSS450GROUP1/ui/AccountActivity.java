@@ -8,8 +8,11 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.TCSS450GROUP1.R;
 import com.example.TCSS450GROUP1.model.SettingsViewModel;
-import com.example.TCSS450GROUP1.model.UserInfoViewModel;
 
+/**
+ * Activity for the Settings in the drop down menu
+ * @author Joseph Rushford
+ */
 public class AccountActivity extends AppCompatActivity {
     private SharedPreferences mSharedTheme;
     private String mJWT;

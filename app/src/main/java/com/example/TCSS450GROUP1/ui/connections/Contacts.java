@@ -1,13 +1,15 @@
 package com.example.TCSS450GROUP1.ui.connections;
 
-import org.json.JSONObject;
-
 import java.io.Serializable;
 
+/**
+ * @author Joseph Rushford
+ * Serializable Contacts to pass between fragments
+ */
 public class Contacts implements Serializable {
 
 
-        private final String mUserName;
+        private final String mEmail;
 
         /**
 
@@ -18,7 +20,7 @@ public class Contacts implements Serializable {
          */
         public Contacts(String username, int rowCount) throws Exception {
 
-            mUserName = username;
+            mEmail = username;
 
         }
 
@@ -28,7 +30,7 @@ public class Contacts implements Serializable {
          * @return
          */
         public String getUserName() {
-            return mUserName;
+            return mEmail;
         }
 
 

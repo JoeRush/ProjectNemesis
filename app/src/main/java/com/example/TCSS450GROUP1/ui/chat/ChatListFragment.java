@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.Navigation;
 
 import com.example.TCSS450GROUP1.databinding.FragmentChatListBinding;
 import com.example.TCSS450GROUP1.model.UserInfoViewModel;
@@ -54,7 +55,7 @@ public class ChatListFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         binding = FragmentChatListBinding.inflate(inflater);
-
+        binding.buttonAddChatlist.setOnClickListener(view->Navigation.findNavController(view).navigate(ChatListFragmentDirections.actionNavigationChatToAddChatFragment()));
         return binding.getRoot();
     }
 
@@ -69,9 +70,12 @@ public class ChatListFragment extends Fragment {
 
             if (!chatRoomList.isEmpty()) {
 
-                binding.chatlistRoot.setAdapter(new ChatListRecyclerViewAdapter(chatRoomList));
+                binding.chatlistRoot.setAdapter(new ChatListRecyclerViewAdapter(chatRoomList, this));
             }
 
         });
+    }
+    public void deleteChat(int chatId) {
+        mModel.connectDeleteChat(chatId);
     }
 }

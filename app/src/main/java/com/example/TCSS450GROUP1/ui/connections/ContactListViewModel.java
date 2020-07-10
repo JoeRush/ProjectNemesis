@@ -13,20 +13,21 @@ import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.Request;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
-import com.example.TCSS450GROUP1.R;
 import com.example.TCSS450GROUP1.io.RequestQueueSingleton;
 import com.example.TCSS450GROUP1.model.UserInfoViewModel;
 
 import org.json.JSONArray;
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.function.IntFunction;
 
+/**
+ * @author Joseph Rushford
+ * ContactList fragment view model to handle the call to the database to recieve the list of contacts
+ */
 public class ContactListViewModel extends AndroidViewModel {
     private MutableLiveData<List<Contacts>> mContacts;
     private UserInfoViewModel userInfoViewModel;
@@ -37,7 +38,13 @@ public class ContactListViewModel extends AndroidViewModel {
         mContacts.setValue(new ArrayList<>());
     }
 
-
+    /**
+     * Observer for the list of Contacts
+     * @author Joseph Rushford
+     * @param owner of the observer
+     * @param observer to see if the contact list changed
+     *
+     */
     public void addContactListObserver(@NonNull LifecycleOwner owner,
                                          @NonNull Observer<? super List<Contacts>> observer) {
         mContacts.observe(owner, observer);
@@ -53,8 +60,13 @@ public class ContactListViewModel extends AndroidViewModel {
         }
     }
 
+    /**
+     * @author Joseph Rushford
+     * method to handle the result from the database call
+     * @param result of the database call
+     */
     private void handleResult(final JSONObject result) {
-
+        Log.i("contacts", result.toString());
         if (!result.has("values")) {
             throw new IllegalStateException("Unexpected response in ContactsViewModel: " + result);
         }
@@ -64,7 +76,7 @@ public class ContactListViewModel extends AndroidViewModel {
             JSONArray jsonUsers = result.getJSONArray("values");
             for(int i = 0; i < jsonUsers.length(); i++) {
                 JSONObject user = (new JSONObject(jsonUsers.getString(i)));
-                contacts.add(new Contacts(user.getString("username"), i));
+                contacts.add(new Contacts(user.getString("email"), i));
                 }
             mContacts.setValue(contacts);
             Log.d("CONTACTS", "" + mContacts.toString());
@@ -73,6 +85,12 @@ public class ContactListViewModel extends AndroidViewModel {
         }
 
     }
+
+    /**
+     * connects to the database and recievers a list of contacts for the current user.
+     * @param email the email of the current user
+     * @param jwt the auth token
+     */
     public void connect(final String email, final String jwt) {
 
 
@@ -81,7 +99,6 @@ public class ContactListViewModel extends AndroidViewModel {
         JSONObject body = new JSONObject();
 
 
-        Log.i("Made it:", body.toString());
         Request request = new JsonObjectRequest(
                 Request.Method.GET,
                 url,
@@ -96,8 +113,7 @@ public class ContactListViewModel extends AndroidViewModel {
                 return headers;
             }
         };
-
-        Log.i("Made it:", request.toString());
+        Log.i("contacts", url);
         request.setRetryPolicy(new DefaultRetryPolicy(
                 10_000,
                 DefaultRetryPolicy.DEFAULT_MAX_RETRIES,

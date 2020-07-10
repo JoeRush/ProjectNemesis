@@ -50,8 +50,6 @@ public class ChatListViewModel extends AndroidViewModel {
 
         mChatRoomList = new MutableLiveData<>();
         mChatRoomList.setValue(new ArrayList<>());
-
-
     }
 
     /**
@@ -92,7 +90,8 @@ public class ChatListViewModel extends AndroidViewModel {
 
             for (int i = 0; i < rows.length(); i++) {
                 JSONObject row = rows.getJSONObject(i);
-                ChatRoom cr = new ChatRoom(row, rowCount);
+                int chatId = row.getInt("chatid");
+                ChatRoom cr = new ChatRoom(row, rowCount,chatId);
                 listOfEmails.add(cr);
             }
             mChatRoomList.setValue(listOfEmails);
@@ -114,7 +113,7 @@ public class ChatListViewModel extends AndroidViewModel {
             throw new IllegalArgumentException("No UserInfoViewModel is assigned");
         }
         String url = getApplication().getResources().getString(R.string.base_url) +
-                "chats/" + "1";
+                "chats/" + "list/" + userInfoViewModel.getEmail();
 
         Request request = new JsonObjectRequest(Request.Method.GET, url, null,
                 //no body for this get request
@@ -137,4 +136,31 @@ public class ChatListViewModel extends AndroidViewModel {
     }
 
 
+    public void connectDeleteChat(int chatId) {
+        Log.d("ChatListViewModel DELETE", "Request to delete chat: " + chatId + " for email: " + userInfoViewModel.getEmail());
+        String url = getApplication().getResources().getString(R.string.base_url) + "chats"
+                + "/" + chatId
+                + "/" + userInfoViewModel.getEmail();
+
+        Request request = new JsonObjectRequest(Request.Method.DELETE, url, null,
+                this::handleDeleteResult, this::handleError) {
+            @Override
+            public Map<String, String> getHeaders() {
+                Map<String, String> headers = new HashMap<>();
+                headers.put("Authorization", userInfoViewModel.getJWT());
+                return headers;
+            }
+        };
+        request.setRetryPolicy(new DefaultRetryPolicy(10_000, DefaultRetryPolicy.DEFAULT_MAX_RETRIES, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+        //Instantiate the RequestQueue and add the request to the queue
+        Volley.newRequestQueue(getApplication().getApplicationContext()).add(request);
+    }
+
+    private void handleDeleteResult(JSONObject result) {
+        try {
+            Log.d("ChatListViewModel DELETE", "Result for delete attempt: " + result.getString("success"));
+        } catch (JSONException e) {
+            throw new IllegalStateException("Unexpected response in ChatListViewModel: " + result);
+        }
+    }
 }

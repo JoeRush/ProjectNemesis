@@ -1,4 +1,4 @@
-package com.example.TCSS450GROUP1.ui.connections.contacts;
+package com.example.TCSS450GROUP1.ui.connections;
 
 import android.app.Application;
 import android.util.Log;
@@ -13,32 +13,30 @@ import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.Request;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
-import com.android.volley.toolbox.Volley;
-import com.example.TCSS450GROUP1.R;
 import com.example.TCSS450GROUP1.io.RequestQueueSingleton;
-import com.example.TCSS450GROUP1.model.UserInfoViewModel;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.nio.charset.Charset;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 
-public class ContactListViewModel extends AndroidViewModel {
+/**
+ * @author Joseph Rushford
+ * view model for delete contact fragment
+ */
+public class DeleteContactViewModel extends AndroidViewModel {
     private MutableLiveData<JSONObject> mContacts;
 
-    public ContactListViewModel(@NonNull Application application) {
+    public DeleteContactViewModel(@NonNull Application application) {
         super(application);
         mContacts = new MutableLiveData<>();
         mContacts.setValue(new JSONObject());
     }
     public void addResponseObserver(@NonNull LifecycleOwner owner,
-                                    @NonNull Observer<? super JSONObject> observer){
+                                      @NonNull Observer<? super JSONObject> observer){
         mContacts.observe(owner, observer);
     }
 
@@ -65,17 +63,26 @@ public class ContactListViewModel extends AndroidViewModel {
             }
         }
     }
-    public void connect(String email, final String jwt) {
+
+    /**
+     *
+     * call o nthe database to delete a user from the current user's contacts
+     * @author Joseph Rushford
+     * @param email email of the current user.
+     * @param otherEmail the email of the contact to delete.
+     * @param jwt the token.
+     */
+    public void connectRemoveContact(String email, String otherEmail, final String jwt) {
 
 
 
-        String url = "https://team1-database.herokuapp.com/contacts/" + email;
+        String url = "https://team1-database.herokuapp.com/contacts/" + email + "/" + otherEmail;
         JSONObject body = new JSONObject();
 
 
         Log.i("Made it:", body.toString());
         Request request = new JsonObjectRequest(
-                Request.Method.GET,
+                Request.Method.DELETE,
                 url,
                 body,
                 mContacts::setValue,
@@ -99,8 +106,5 @@ public class ContactListViewModel extends AndroidViewModel {
                 .addToRequestQueue(request);
 
 
-    }
-
-    public void connectGet() {
     }
 }
