@@ -1723,7 +1723,6 @@ id gone
 id group_divider
 id groups
 id guideline
-id guideline2
 id guideline3
 id guideline_fifty
 id hideable
@@ -1755,8 +1754,10 @@ id line1
 id line3
 id linearLayout
 id listMode
+id list_24_hour
+id list_current_weather
+id list_five_day
 id list_item
-id list_weather
 id loginFragment
 id mainActivity
 id main_graph
@@ -1914,16 +1915,16 @@ id textSpacerNoTitle
 id textStart
 id textView
 id textView2
-id text_city
+id text_day_time
 id text_description
 id text_email_home
-id text_hour
 id text_input_end_icon
 id text_input_start_icon
 id text_label
 id text_message
 id text_temp
 id text_title
+id text_type_day
 id textinput_counter
 id textinput_error
 id textinput_helper_text
@@ -2056,6 +2057,7 @@ layout fragment_contacts_list
 layout fragment_delete
 layout fragment_delete_contact
 layout fragment_forgot
+layout fragment_forgotten_change_password
 layout fragment_home
 layout fragment_login
 layout fragment_map
@@ -2127,6 +2129,7 @@ layout text_view_without_line_height
 layout theme_switch
 menu bottom_nav_menu
 menu drop_down
+menu toolbar
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation account_graph
@@ -2316,6 +2319,7 @@ string text_success_jwt
 string text_success_useremail
 string text_success_userjwt
 string text_verification_message
+string title_Map
 string title_activity_map
 string title_activity_maps
 string title_add_chat

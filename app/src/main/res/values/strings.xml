@@ -17,7 +17,7 @@
     <string name="hint_new_password">Enter New Password</string>
     <string name="hint_username_change">Enter Username</string>
     <string name="hint_password">Password</string>
-    <string name="current_location_weather">Current Location Weather</string>
+    <string name="current_location_weather">Current Location Weather:</string>
 
     <string name="button_login_login">Login</string>
 
@@ -92,7 +92,7 @@
     <string name="button_delete_contact">Delete Contact</string>
     <string name="button_add_contact">Add Contact</string>
     <string name="title_activity_map">Map</string>
-    <string name="Temperature_Value_Home">Current Temperature</string>
+    <string name="Temperature_Value_Home">Current Temperature:</string>
 
     <string name="hint_add_contact">Enter new contact\'s email</string>
     <string name="title_delete_contact">Delete Contact</string>
@@ -105,4 +105,5 @@
     <string name="title_add_user_to_chat">Add User to Chat</string>
     <string name="title_chat_list">ChatList</string>
     <string name="button_chat_contact">Create New Chat</string>
+    <string name="title_Map">Map</string>
 </resources>

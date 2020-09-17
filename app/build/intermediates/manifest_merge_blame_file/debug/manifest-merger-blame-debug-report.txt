@@ -6,9 +6,9 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="24"
-8-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml
+8-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml
+9-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml
 10
 11    <!--
 12         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -16,26 +16,26 @@
 14         location permissions for the 'MyLocation' functionality.
 15    -->
 16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-16-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:10:5-79
-16-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:10:22-76
+16-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:10:5-79
+16-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:10:22-76
 17    <uses-permission android:name="android.permission.WAKE_LOCK" />
-17-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:11:5-68
-17-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:11:22-65
+17-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:11:5-68
+17-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:11:22-65
 18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-18-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:12:5-79
-18-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:12:22-76
+18-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:12:5-79
+18-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:12:22-76
 19    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-19-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:13:5-81
-19-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:13:22-78
+19-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:13:5-81
+19-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:13:22-78
 20    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-20-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:14:5-81
-20-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:14:22-78
+20-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:14:5-81
+20-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:14:22-78
 21    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-21-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:15:5-81
-21-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:15:22-78
+21-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:15:5-81
+21-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:15:22-78
 22    <uses-permission android:name="android.permission.INTERNET" />
-22-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:16:5-67
-22-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:16:22-64
+22-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:16:5-67
+22-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:16:22-64
 23
 24    <uses-feature
 24-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\jr-99\.gradle\caches\transforms-2\files-2.1\80f047be9eb02306368b8c4dd41f64a0\jetified-play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
@@ -45,26 +45,26 @@
 26-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\jr-99\.gradle\caches\transforms-2\files-2.1\80f047be9eb02306368b8c4dd41f64a0\jetified-play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
 27
 28    <application
-28-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:17:5-88:19
+28-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:17:5-88:19
 29        android:allowBackup="true"
-29-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:18:9-35
+29-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:18:9-35
 30        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 30-->[androidx.core:core:1.1.0] C:\Users\jr-99\.gradle\caches\transforms-2\files-2.1\9f53cb53909029cecd1698edf8387a48\core-1.1.0\AndroidManifest.xml:24:18-86
 31        android:debuggable="true"
 32        android:extractNativeLibs="false"
 33        android:icon="@drawable/raccoonrain"
-33-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:19:9-45
+33-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:19:9-45
 34        android:label="@string/app_name"
-34-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:20:9-41
+34-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:20:9-41
 35        android:roundIcon="@drawable/raccoonrain"
-35-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:21:9-50
+35-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:21:9-50
 36        android:supportsRtl="true"
-36-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:23:9-35
+36-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:23:9-35
 37        android:testOnly="true"
 38        android:theme="@style/AppTheme"
-38-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:24:9-40
+38-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:24:9-40
 39        android:usesCleartextTraffic="true" >
-39-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:22:9-44
+39-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:22:9-44
 40
 41        <!--
 42             The API key for Google Maps-based APIs is defined as a string resource.
@@ -75,105 +75,105 @@
 47             You can define the keys for the debug and release targets in src/debug/ and src/release/.
 48        -->
 49        <meta-data
-49-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:34:9-36:55
+49-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:34:9-36:55
 50            android:name="com.google.android.geo.API_KEY"
-50-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:35:13-58
+50-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:35:13-58
 51            android:value="@string/google_maps_key" />
-51-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:36:13-52
+51-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:36:13-52
 52
 53        <activity
-53-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:38:9-40:68
+53-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:38:9-40:68
 54            android:name="com.example.TCSS450GROUP1.MapsActivity"
-54-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:39:13-41
+54-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:39:13-41
 55            android:label="@string/title_activity_maps" />
-55-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:40:13-56
+55-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:40:13-56
 56        <activity
-56-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:41:9-43:59
+56-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:41:9-43:59
 57            android:name="com.example.TCSS450GROUP1.ui.MapsActivity"
-57-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:42:13-44
+57-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:42:13-44
 58            android:label="@string/title_activity_maps" />
-58-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:43:13-56
+58-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:43:13-56
 59        <activity android:name="com.example.TCSS450GROUP1.ui.AccountActivity" />
-59-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:44:9-56
-59-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:44:19-53
+59-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:44:9-56
+59-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:44:19-53
 60        <activity
-60-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:45:9-46:57
+60-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:45:9-46:57
 61            android:name="com.example.TCSS450GROUP1.ui.MainActivity"
-61-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:45:19-50
+61-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:45:19-50
 62            android:windowSoftInputMode="adjustNothing" />
-62-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:46:12-55
+62-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:46:12-55
 63        <activity android:name="com.example.TCSS450GROUP1.ui.AuthenticationActivity" >
-63-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:47:9-53:20
-63-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:47:19-60
+63-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:47:9-53:20
+63-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:47:19-60
 64            <intent-filter>
-64-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:48:13-52:29
+64-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:48:13-52:29
 65                <action android:name="android.intent.action.MAIN" />
-65-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:49:17-69
-65-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:49:25-66
+65-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:49:17-69
+65-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:49:25-66
 66
 67                <category android:name="android.intent.category.LAUNCHER" />
-67-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:51:17-77
-67-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:51:27-74
+67-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:51:17-77
+67-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:51:27-74
 68            </intent-filter>
 69        </activity> <!-- Pushy Declarations -->
 70        <!-- Pushy Notification Receiver -->
 71        <!-- Incoming push notifications will invoke the following BroadcastReceiver -->
 72        <receiver
-72-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:56:9-64:20
+72-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:56:9-64:20
 73            android:name="com.example.TCSS450GROUP1.ui.chat.PushReceiver"
-73-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:57:13-49
+73-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:57:13-49
 74            android:exported="false" >
-74-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:58:13-37
+74-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:58:13-37
 75            <intent-filter>
-75-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:59:13-63:29
+75-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:59:13-63:29
 76
 77                <!-- Do not modify this -->
 78                <action android:name="pushy.me" />
-78-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:62:17-51
-78-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:62:25-48
+78-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:62:17-51
+78-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:62:25-48
 79            </intent-filter>
 80        </receiver> <!-- Pushy Update Receiver -->
 81        <!-- Do not modify - internal BroadcastReceiver that restarts the listener service -->
 82        <receiver
-82-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:66:9-72:20
+82-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:66:9-72:20
 83            android:name="me.pushy.sdk.receivers.PushyUpdateReceiver"
-83-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:67:13-70
+83-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:67:13-70
 84            android:exported="false" >
-84-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:68:13-37
+84-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:68:13-37
 85            <intent-filter>
-85-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:69:13-71:29
+85-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:69:13-71:29
 86                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
-86-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:70:17-84
-86-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:70:25-81
+86-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:70:17-84
+86-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:70:25-81
 87            </intent-filter>
 88        </receiver> <!-- Pushy Boot Receiver -->
 89        <!-- Do not modify - internal BroadcastReceiver that restarts the listener service -->
 90        <receiver
-90-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:74:9-80:20
+90-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:74:9-80:20
 91            android:name="me.pushy.sdk.receivers.PushyBootReceiver"
-91-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:75:13-68
+91-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:75:13-68
 92            android:exported="false" >
-92-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:76:13-37
+92-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:76:13-37
 93            <intent-filter>
-93-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:77:13-79:29
+93-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:77:13-79:29
 94                <action android:name="android.intent.action.BOOT_COMPLETED" />
-94-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:78:17-79
-94-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:78:25-76
+94-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:78:17-79
+94-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:78:25-76
 95            </intent-filter>
 96        </receiver> <!-- Pushy Socket Service -->
 97        <!-- Do not modify - internal service -->
 98        <service android:name="me.pushy.sdk.services.PushySocketService" /> <!-- Pushy Job Service (added in Pushy SDK 1.0.35) -->
-98-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:82:9-76
-98-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:82:18-73
+98-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:82:9-76
+98-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:82:18-73
 99        <!-- Do not modify - internal service -->
 100        <service
-100-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:84:9-87:72
+100-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:84:9-87:72
 101            android:name="me.pushy.sdk.services.PushyJobService"
-101-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:85:13-65
+101-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:85:13-65
 102            android:exported="true"
-102-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:86:13-36
+102-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:86:13-36
 103            android:permission="android.permission.BIND_JOB_SERVICE" />
-103-->C:\Users\jr-99\AndroidStudioProjects\final\app\src\main\AndroidManifest.xml:87:13-69
+103-->C:\Users\jr-99\AndroidStudioProjects\Project Nemesis\app\src\main\AndroidManifest.xml:87:13-69
 104        <!-- Needs to be explicitly declared on P+ -->
 105        <uses-library
 105-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\jr-99\.gradle\caches\transforms-2\files-2.1\80f047be9eb02306368b8c4dd41f64a0\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
